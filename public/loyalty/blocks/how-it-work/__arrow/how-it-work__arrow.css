@@ -1,0 +1,7 @@
+.how-it-work {
+  &__arrow {
+    margin-top: 70px;
+    width: 7px;
+    height: 14px;
+  }
+}

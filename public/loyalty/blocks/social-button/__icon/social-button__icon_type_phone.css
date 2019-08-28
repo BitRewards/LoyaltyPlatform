@@ -1,0 +1,15 @@
+.social-button {
+  &__icon_type_phone {
+    fill: #283343;
+
+    .social-button.is-small & {
+      width: 16px;
+      height: 16px;
+
+      @media (--mobile) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

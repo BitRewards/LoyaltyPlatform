@@ -1,0 +1,12 @@
+.tab-content {
+  &_viewtype_centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+
+    .tab-content__in {
+      justify-content: center;
+    }
+  }
+}

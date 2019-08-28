@@ -1,0 +1,21 @@
+.social-button {
+  &__icon_type_gp {
+    width: 40px;
+    height: 25px;
+
+    @media (--mobile) {
+      width: 32px;
+      height: 20px;
+    }
+
+    .social-button.is-small & {
+      width: 20px;
+      height: 15px;
+
+      @media (--mobile) {
+        width: 20px;
+        height: 15px;
+      }
+    }
+  }
+}

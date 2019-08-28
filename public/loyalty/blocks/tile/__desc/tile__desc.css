@@ -1,0 +1,7 @@
+.tile {
+  &__desc {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 15px;
+  }
+}

@@ -1,0 +1,25 @@
+.instruction {
+  &__item {
+    position: relative;
+    margin-bottom: 8px;
+    padding-left: 32px;
+    font-size: 14px;
+    line-height: 20px;
+
+    &:before {
+      content: counter(instruction);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      font-family: var(--defaultFontSemiBold);
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      background-color: #f3f3f4;
+      border-radius: 50%;
+      counter-increment: instruction;
+    }
+  }
+}

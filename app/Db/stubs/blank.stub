@@ -1,0 +1,26 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class DummyClass extends Migration
+{
+    public function up()
+    {
+        DB::beginTransaction();
+
+        //
+
+        DB::commit();
+    }
+
+    public function down()
+    {
+        DB::beginTransaction();
+
+        //
+
+        DB::commit();
+    }
+}

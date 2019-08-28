@@ -1,0 +1,8 @@
+.modal {
+  &__success-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+    fill: var(--brandColor);
+  }
+}

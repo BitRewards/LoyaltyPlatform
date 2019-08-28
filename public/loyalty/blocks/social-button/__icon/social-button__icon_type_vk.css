@@ -1,0 +1,27 @@
+.social-button {
+  &__icon_type_vk {
+    width: 39px;
+    height: 22px;
+
+    @media (--mobile) {
+      width: 31px;
+      height: 18px;
+    }
+
+    .social-button_viewtype_rectangle &,
+    .is-small & {
+      width: 25px;
+      height: 14px;
+    }
+
+    .social-button.is-small & {
+      width: 20px;
+      height: 12px;
+
+      @media (--mobile) {
+        width: 20px;
+        height: 12px;
+      }
+    }
+  }
+}

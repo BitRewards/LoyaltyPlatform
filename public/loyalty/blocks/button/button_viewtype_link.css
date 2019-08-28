@@ -1,0 +1,27 @@
+.button {
+  &_viewtype_link {
+    height: auto;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 14px;
+    line-height: normal;
+    color: #303645;
+    transition: color .3s;
+
+    &:hover {
+      color: var(--brandColor);
+    }
+
+    .button__icon {
+        width: 11px;
+        height: 12px;
+        vertical-align: middle;
+        fill: currentColor;
+        opacity: .8;
+    }
+
+    .button__text {
+      font-size: 14px;
+      line-height: normal;
+    }
+  }
+}

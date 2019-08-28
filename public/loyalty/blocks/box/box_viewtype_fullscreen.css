@@ -1,0 +1,41 @@
+.box {
+  &_viewtype_fullscreen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+    transform: translateZ(0);
+    padding-top: 100px;
+    padding-right: 20px;
+    padding-left: 20px;
+    overflow: auto;
+    background-color: #fff;
+    box-sizing: border-box;
+
+    @media (--tabletPortrait) {
+      padding-top: 19px;
+      padding-left: 40px;
+    }
+
+    @media (--aboveTabletPortrait) {
+      padding-top: 19px;
+      padding-left: 100px;
+    }
+
+    .box__subtitle {
+      margin-bottom: 20px;
+    }
+
+    .box__back {
+      @media (--mobile) {
+        top: 80px;
+      }
+
+      @media (--tabletPortrait) {
+        left: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+.tab-content__text {
+  &_viewtype_wide {
+    max-width: 100%;
+  }
+}

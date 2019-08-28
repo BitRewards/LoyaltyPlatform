@@ -1,0 +1,24 @@
+.steps {
+  &__link {
+    display: block;
+    width: 24px;
+    height: 24px;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #303545;
+    border: 1px solid #303545;
+    border-radius: 50%;
+    opacity: .2;
+    transition: opacity .3s, border-color .3s, color .3s;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      color: var(--brandColor);
+      border-color: var(--brandColor);
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.clipboard {
+  position: absolute;
+  top: center;
+  right: 20px;
+  size: 20px;
+  fill: var(--brandColor);
+  cursor: pointer;
+  opacity: .8;
+  transition: opacity linear .3s;
+  &:hover {
+    opacity: 1;
+  }
+  &.is-hide {
+    display: none;
+  }
+}

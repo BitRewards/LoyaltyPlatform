@@ -1,0 +1,5 @@
+.form-field {
+  &_content_clipboard {
+    padding-right: 50px;
+  }
+}

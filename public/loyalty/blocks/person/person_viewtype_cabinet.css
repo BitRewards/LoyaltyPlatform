@@ -1,0 +1,23 @@
+.person {
+  &_viewtype_cabinet {
+    font-size: 18px;
+    text-align: center;
+    color: #303645;
+    cursor: default;
+
+    .person__name {
+      font-family: var(--defaultFontSemiBold);
+      font-size: 36px;
+      color: #303645;
+      line-height: normal;
+    }
+
+    .person__avatar {
+      margin-bottom: 15px;
+    }
+
+    .person__action {
+      margin-top: 20px;
+    }
+  }
+}

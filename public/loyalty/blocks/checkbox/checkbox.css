@@ -1,0 +1,8 @@
+.checkbox {
+  display: block;
+  @mixin font-reset;
+  font-family: var(--defaultFont);
+  line-height: 18px;
+  white-space: nowrap;
+  cursor: pointer;
+}

@@ -1,0 +1,8 @@
+.back-button__icon {
+  position: absolute;
+  top: center;
+  left: 0;
+  size: 18px 14px;
+  fill: #2f404a;
+  transition: transform ease .3s;
+}

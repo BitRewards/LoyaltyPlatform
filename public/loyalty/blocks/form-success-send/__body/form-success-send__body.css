@@ -1,0 +1,5 @@
+.form-success-send {
+  &__body {
+    line-height: normal;
+  }
+}

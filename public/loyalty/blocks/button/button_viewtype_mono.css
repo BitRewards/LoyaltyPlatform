@@ -1,0 +1,41 @@
+.button {
+  &_viewtype_mono {
+    position: relative;
+    height: 30px;
+    padding: 0 15px 0 35px;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 11px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #303645;
+    border: 1px solid rgba(48, 54, 69, .4);
+    border-radius: 3px;
+    transition: border-color .3s;
+
+    &:hover {
+      border-color: rgba(48, 54, 69, .6);;
+    }
+
+    .button__icon {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      fill: #5f6571;
+      transform: translateY(-50%);
+
+      &_content_profile {
+        width: 16px;
+        height: 15px;
+      }
+
+      &_content_settings {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    & + .button_viewtype_mono {
+      margin-left: 5px;
+    }
+  }
+}

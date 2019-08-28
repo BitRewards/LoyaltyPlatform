@@ -1,0 +1,4 @@
+.switch-group {
+  @mixin list-reset;
+  margin-top: 15px;
+}

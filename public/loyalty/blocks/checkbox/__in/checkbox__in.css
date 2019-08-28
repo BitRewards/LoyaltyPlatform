@@ -1,0 +1,9 @@
+.checkbox {
+  &__in {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    @mixin undo-font-reset;
+    line-height: 1;
+  }
+}

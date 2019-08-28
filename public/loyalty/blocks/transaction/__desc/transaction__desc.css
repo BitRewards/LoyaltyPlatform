@@ -1,0 +1,10 @@
+.transaction {
+  &__desc {
+    display: block;
+    overflow: hidden;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

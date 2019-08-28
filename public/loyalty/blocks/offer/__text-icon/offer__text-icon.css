@@ -1,0 +1,12 @@
+.offer {
+  &__text-icon {
+    display: inline-block;
+    vertical-align: middle;
+    size: 17px;
+    margin-right: 5px;
+    fill: var(--brandColor);
+    .offer__status_viewtype_get & {
+      fill: #fff;
+    }
+  }
+}

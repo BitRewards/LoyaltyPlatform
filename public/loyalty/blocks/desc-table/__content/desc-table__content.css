@@ -1,0 +1,6 @@
+.desc-table {
+  &__content {
+    font-family: var(--defaultFontSemiBold);
+    font-size: 22px;
+  }
+}

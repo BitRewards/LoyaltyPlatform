@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ $# -ge 1 ]
+then
+    cmd="$@"
+else
+    cmd="dev"
+fi
+
+dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )
+
+docker run -it --entrypoint=/usr/local/bin/yarn -v "$dir/nova-components/ReferralTool":/app -w /app node:lts-jessie $cmd

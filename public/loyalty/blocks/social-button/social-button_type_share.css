@@ -1,0 +1,11 @@
+.social-button {
+  &_type_share {
+    width: 160px;
+
+    @media (--mobile) {
+      width: 160px;
+      height: 46px;
+      margin: 0 auto;
+    }
+  }
+}

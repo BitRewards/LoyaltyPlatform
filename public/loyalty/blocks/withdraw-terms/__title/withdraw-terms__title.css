@@ -1,0 +1,13 @@
+.withdraw-terms {
+  &__title {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 14px;
+    border-bottom: 1px dotted;
+
+    @media (--mobile) {
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+image:
+  name: docker/compose:1.23.2
+  entrypoint: ["/bin/sh", "-c"]
+
+services:
+  - docker:dind
+
+variables:
+  DOCKER_HOST: tcp://docker:2375
+  DOCKER_DRIVER: overlay2
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - vendor/
+
+stages:
+  - build
+  - test
+  - deploy_stage
+
+.build:
+  stage: build
+
+  variables:
+    IMAGE: registry.gitlab.com/giftd/crm/$IMAGE_NAME
+
+  script:
+    - docker pull $IMAGE:latest || true
+    - docker build --cache-from $IMAGE:latest --tag $IMAGE:latest $DOCKERFILE_PATH
+    - docker push $IMAGE:latest
+
+  only:
+    refs:
+      - develop
+
+build:php:
+  extends: .build
+
+  variables:
+    IMAGE_NAME: php
+    DOCKERFILE_PATH: ./docker
+
+test:
+  stage: test
+  script:
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
+    - mkdir -p ~/.ssh
+    - echo "$DEPLOYER_PRIVATE_KEY" > ~/.ssh/id_rsa
+    - cat ~/.ssh/id_rsa
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - chmod -R 0600 ~/.ssh
+    - which ssh-agent || (apk add --no-cache openssh-client)
+    - eval $(ssh-agent -s)
+    - cp docker-compose.dist.yml docker-compose.yml
+    - cp .env.dist .env
+    - docker network create giftd
+    - docker-compose pull
+    - docker-compose up -d --build
+    - docker-compose exec -T crm sh -c "chmod -R 0600 ~/.ssh"
+    - docker-compose exec -T crm sh -c "composer install"
+    - docker-compose exec -T db sh -c "createdb -U crm_user crm_test"
+    - docker-compose exec -T crm sh -c "vendor/bin/codecept run"
+
+.deploy_stage:
+  image: registry.gitlab.com/giftd/docker/php
+  stage: deploy_stage
+  script:
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$DEPLOYER_PRIVATE_KEY")
+    - mkdir -p ~/.ssh
+    - echo "$DEPLOYER_PRIVATE_KEY" > ~/.ssh/id_rsa
+    - chmod -R 0600 ~/.ssh/id_rsa
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - dep deploy $STAGE_NAME --revision $CI_COMMIT_SHA
+
+  only:
+    variables:
+      - $STAGE_NAME
+
+  when: manual
+
+deploy_to_alpha:
+  extends: .deploy_stage
+
+  variables:
+    STAGE_NAME: alpha
+
+deploy_to_beta:
+  extends: .deploy_stage
+
+  variables:
+    STAGE_NAME: beta
+
+deploy_to_gamma:
+  extends: .deploy_stage
+
+  variables:
+    STAGE_NAME: gamma
+
+deploy_to_delta:
+  extends: .deploy_stage
+
+  variables:
+    STAGE_NAME: delta

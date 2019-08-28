@@ -1,0 +1,11 @@
+.table {
+  &__head {
+    @media (--mobile) {
+      display: none;
+    }
+
+    @media (--tabletPortrait) {
+      display: none;
+    }
+  }
+}

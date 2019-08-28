@@ -1,0 +1,14 @@
+.bind-acc {
+  &__text {
+    flex: 1;
+    min-width: 0;
+    padding: 0 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    @media (--mobile) {
+      margin-bottom: 10px;
+    }
+  }
+}

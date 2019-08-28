@@ -1,0 +1,11 @@
+.calculator {
+  &__total-text {
+    padding-right: 10px;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 16px;
+
+    @media (--mobile) {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.switch {
+  &__pseudo {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 20px;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 32px;
+      height: 20px;
+      border-radius: 16px;
+      background: #dedfe1;
+      transition: all 0.3s;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      display: block;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #fff;
+      transition: all 0.3s;
+      color:  red;
+    }
+
+    .switch__input:checked + & {
+      &:before {
+        background: var(--brandColor);
+      }
+
+      &:after {
+        margin-left: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.operation {
+  &__meta_viewtype_expired {
+    position: relative;
+    display: inline-block;
+    margin-left: 2px;
+    padding-left: 7px;
+    color: rgba(46, 64, 75, .8);
+    opacity: 1;
+
+    &:empty {
+      &:before {
+        content: none;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 3px;
+      height: 3px;
+      background-color: var(--brandColor);
+      transform: translateY(-50%);
+    }
+  }
+}

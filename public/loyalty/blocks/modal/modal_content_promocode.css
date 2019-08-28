@@ -1,0 +1,7 @@
+.modal {
+  &_content_promocode {
+    .modal__body {
+      overflow: hidden;
+    }
+  }
+}

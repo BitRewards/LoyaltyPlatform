@@ -1,0 +1,7 @@
+.button {
+  &__text {
+    font-family: var(--defaultFontSemiBold);
+    font-size: 17px;
+    line-height: 22px;
+  }
+}

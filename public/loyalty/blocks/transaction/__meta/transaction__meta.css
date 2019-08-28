@@ -1,0 +1,16 @@
+.transaction {
+  &__meta {
+    display: block;
+    overflow: hidden;
+    font-family: var(--defaultFont);
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    opacity: .6;
+
+    .transaction__desc + &,
+    .transaction__date + & {
+      margin-top: 5px;
+    }
+  }
+}

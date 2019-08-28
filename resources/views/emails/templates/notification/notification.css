@@ -1,0 +1,216 @@
+@media only screen and (max-device-width: 480px) {
+  table[class=w600], td[class=w600], img[class=w600] {
+    width: 300px !important;
+  }
+
+  .mobile_only {
+    display: block !important;
+    max-height: none !important;
+    font-size: 12px !important; 
+  }
+
+  .large_only,
+  .large_only.block {
+    display: none !important;
+  }
+
+  .button-content {
+    text-align: center;
+  }
+
+  .button-content .button {
+    display: block;
+    width: 100%;
+  }
+
+  .share {
+    font-size: 15px!important;
+  }
+
+  .block {
+    display: block!important;
+    width: 100%!important;
+  }
+}
+
+.mobile_only {
+  display: none;
+  max-height: 0px;
+  font-size: 0;
+}
+
+.large_only {
+  display: block;
+}
+
+.page-title {
+  font-size: 28px;
+  line-height: 1.2!important;
+  color: #010101;
+}
+
+.page-title span {
+  font-family: Helvetica Neue Medium, Helvetica, Arial, Helvetica, serif;
+  color: #fa6155;
+}
+
+.article-content, p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, Helvetica, serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+
+p.small {
+  color: #999;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.article-content a {
+  color: #f26728;
+  font-weight: bold;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.article-content a:hover {
+  text-decoration: underline;
+}
+
+.article-content ol, .article-content ul {
+  margin-top: 0px;
+  margin-bottom: 18px;
+  margin-left: 19px;
+  padding: 0;
+}
+
+.article-content li {
+  font-size: 13px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.article-content li a {
+  color: #f26728;
+  text-decoration: underline;
+}
+
+.article-content p {
+  margin: 0;
+  padding: 0;
+}
+
+.button-content {
+  text-align: left;
+}
+
+.button-content .button {
+  display: inline-block;
+  margin: 0;
+  width: 310px;
+  padding: 15px 0;
+  font-family: Helvetica Neue Medium, Helvetica, Arial, Helvetica, serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: #fa6155;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-content.inversed .button {
+  background: white;
+  color: #fa6155;
+  border: 2px #fa6155 solid;
+}
+
+/* Client-specific Styles */
+#outlook a {
+  padding: 0; }
+
+/* Force Outlook to provide a "view in browser" button. */
+body {
+  width: 100% !important; }
+
+.ReadMsgBody {
+  width: 100%; }
+
+.ExternalClass {
+  width: 100%;
+  display: block !important; }
+
+/* Force Hotmail to display emails at full width */
+/* Reset Styles */
+/* Add 100px so mobile switch bar doesn't cover street address. */
+html, body {
+  background-color: #f4f4f2;
+  color: #000;
+  margin: 0;
+  padding: 0; }
+
+img {
+  /*height: auto;*/
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+  display: block;
+  max-width: 100%; }
+
+#footer img {
+  display: inline; }
+
+br, strong br, b br, em br, i br {
+  line-height: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica Neue, Helvetica, Arial, Helvetica, serif;
+  font-weight: 300;
+  line-height: 130% !important;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  text-align: left;
+  margin: 0; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: blue !important; }
+
+h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+  color: red !important; }
+
+/* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+  color: purple !important; }
+
+/* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+table td, table tr {
+  border-collapse: collapse; }
+
+.yshortcuts {
+  color: black;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background: none !important; }
+
+.yshortcuts a {
+  color: black;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background: none !important; }
+
+.yshortcuts a:link, .yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span {
+  color: black;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background: none !important; }
+
+.color-black {
+  color: #000;
+}

@@ -1,0 +1,7 @@
+.switch {
+  &__text {
+    margin-left: 5px;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 16px;
+  }
+}

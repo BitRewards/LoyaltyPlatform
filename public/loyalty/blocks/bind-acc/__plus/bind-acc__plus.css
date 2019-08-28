@@ -1,0 +1,10 @@
+.bind-acc {
+  &__plus {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    fill: #4b5967;
+  }
+}

@@ -1,0 +1,12 @@
+.achievement {
+  &__status_viewtype_success {
+    background-color: transparent;
+    &:after {
+      content: "";
+      position: absolute 0;
+      background-color: var(--brandColor);
+      opacity: .1;
+      pointer-events: none;
+    }
+  }
+}

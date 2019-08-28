@@ -1,0 +1,6 @@
+.modal {
+  &_content_bitrewards-paid-out {
+    max-width: 500px;
+    width: 100%;
+  }
+}

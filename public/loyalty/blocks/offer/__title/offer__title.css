@@ -1,0 +1,12 @@
+.offer {
+  &__title {
+    height: 44px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 40px;
+    line-height: 44px;
+  }
+}

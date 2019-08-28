@@ -1,0 +1,24 @@
+.button {
+  &_viewtype_badge {
+    height: 26px;
+    padding: 0 13px;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: rgba(49, 54, 71, .05);
+    border-radius: 30px;
+
+    &:hover {
+      background-color: rgba(49, 54, 71, .1);
+    }
+
+    .button__text {
+      font-family: var(--defaultFont);
+      font-size: 14px;
+      line-height: 26px;
+
+      b {
+        font-family: var(--defaultFontSemiBold);
+      }
+    }
+  }
+}

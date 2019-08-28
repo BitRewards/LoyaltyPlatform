@@ -1,0 +1,13 @@
+.tab-content {
+  &__subtitle_content_elki {
+    max-width: 500px;
+    margin: 20px auto 0;
+    font-size: 24px;
+    line-height: 1.25;
+
+    @media (--mobile) {
+      font-size: 18px;
+      line-height: 1.2;
+    }
+  }
+}

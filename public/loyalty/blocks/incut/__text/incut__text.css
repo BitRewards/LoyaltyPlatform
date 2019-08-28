@@ -1,0 +1,9 @@
+.incut {
+  &__text {
+    font-size: 15px;
+
+    .incut__icon + & {
+      padding-left: 30px;
+    }
+  }
+}

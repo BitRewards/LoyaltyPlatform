@@ -1,0 +1,21 @@
+.calculator {
+  &__position {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 3px;
+      left: 0;
+      height: 2px;
+      background: repeating-linear-gradient(to right, #d6d7da, #d6d7da 33.33%, #fff 33.33%, #fff);
+      background-size: 6px 2px;
+      background-position: bottom;
+      background-repeat: repeat-x;
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.operation {
+  &__thumbnail {
+    flex-shrink: 0;
+    position: relative;
+    size: 60px;
+    margin-right: 17px;
+    background-color: var(--brandColor);
+    border-radius: 50%;
+
+    &_transparent {
+     background-color: transparent;
+    }
+
+    @media (--mobile) {
+      position: absolute;
+      top: -7px;
+      left: -7px;
+      transform: scale(.75);
+    }
+    @media (--tabletPortrait) {
+      position: absolute;
+      top: -7px;
+      left: -7px;
+      transform: scale(.75);
+    }
+  }
+}

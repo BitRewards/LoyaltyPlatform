@@ -1,0 +1,24 @@
+.social-auth {
+  &_content_share {
+    .social-auth__item {
+      @media (--mobile) {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &.is-small {
+      display: inline-block;
+      vertical-align: middle;
+
+      .social-auth__item {
+        margin-left: 10px;
+      }
+    }
+  }
+}

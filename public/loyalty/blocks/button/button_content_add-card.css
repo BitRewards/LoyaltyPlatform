@@ -1,0 +1,7 @@
+.button {
+  &_content_add-card {
+    width: 100%;
+    max-width: 320px;
+    padding: * 20px;
+  }
+}

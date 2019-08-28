@@ -1,0 +1,5 @@
+.popover {
+  &__item {
+    margin-bottom: 3px;
+  }
+}

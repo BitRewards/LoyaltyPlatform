@@ -1,0 +1,10 @@
+.tab-content {
+  &__header-image {
+    size: 104px;
+    margin-bottom: 30px;
+    @media (--mobile) {
+      size: 80px;
+      margin-bottom: 15px;
+    }
+  }
+}

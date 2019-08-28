@@ -1,0 +1,43 @@
+.story {
+  &_content_how-it-work {
+    text-align: center;
+
+    .story__image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+
+      &_step_1 {
+        width: 190px;
+        height: 92px;
+      }
+
+      &_step_2 {
+        width: 207px;
+        height: 132px;
+      }
+
+      &_step_3 {
+        width: 183px;
+        height: 117px;
+      }
+    }
+
+    .story__text {
+      margin-bottom: 5px;
+      font-family: var(--defaultFontSemiBold);
+      font-size: 15px;
+      color: #303545;
+    }
+
+    .story__thumbnail {
+      position: relative;
+      min-height: 174px;
+      margin-bottom: 15px;
+      background-color: #f6f7f9;
+      border-radius: 10px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.social-button {
+  &_viewtype_rectangle {
+    width: auto;
+    height: 46px;
+    padding-right: 20px;
+    padding-left: 50px;
+    border-radius: 4px;
+  }
+}

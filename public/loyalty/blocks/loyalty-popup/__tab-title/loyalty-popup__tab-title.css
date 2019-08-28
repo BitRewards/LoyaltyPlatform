@@ -1,0 +1,15 @@
+.loyalty-popup {
+  &__tab-title {
+    position: absolute;
+    top: center;
+    left: 50px;
+    margin-top: -2px;
+    font-family: var(--defaultFont);
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--defaultColor);
+    @media (--aboveMobile) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.list {
+  &_content_cards {
+    .history-list__item {
+      border: 1px solid #edf0f3;
+      border-left: none;
+      border-right: none;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.progress {
+  &__content {
+    position: relative;
+    width: 100%;
+    max-width: 260px;
+    height: 48px;
+    background-image: linear-gradient(to right, var(--brandColor), var(--brandColor));
+    background-size: 0% 100%;
+    background-color: #595d6a;
+    background-repeat: no-repeat;
+  }
+}

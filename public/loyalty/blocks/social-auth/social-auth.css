@@ -1,0 +1,5 @@
+.social-auth {
+  @mixin list-reset;
+  @mixin font-reset;
+  text-align: center;
+}

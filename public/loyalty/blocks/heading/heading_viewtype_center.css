@@ -1,0 +1,5 @@
+.heading {
+  &_viewtype_center {
+    text-align: center;
+  }
+}

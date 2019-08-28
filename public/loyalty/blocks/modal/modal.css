@@ -1,0 +1,29 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 25px;
+  font-family: var(--defaultFont);
+  color: var(--defaultColor);
+  background-color: #fff;
+  border-radius: 5px;
+  transform: translate(-50%, -50%) scale(.5);
+  opacity: 0;
+  transition: transform linear .2s, opacity linear .2s;
+  box-sizing: border-box;
+  box-shadow: 0 0 40px rgba(7, 20, 28, .3);
+  @media (--mobile) {
+    top: 130px;
+    width: 300px;
+    transform: translateX(-50%) scale(.5);
+  }
+  &.is-active {
+    z-index: 100;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    @media (--mobile) {
+      transform: translateX(-50%) scale(1);
+    }
+  }
+}

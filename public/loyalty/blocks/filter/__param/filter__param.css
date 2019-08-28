@@ -1,0 +1,22 @@
+.filter {
+  &__param {
+    position: relative;
+    display: inline-block;
+    font-family: var(--defaultFontSemiBold);
+    color: var(--brandColor);
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      width: 5px;
+      height: 5px;
+      margin-left: 4px;
+      border-right: 1px solid var(--brandColor);
+      border-bottom: 1px solid var(--brandColor);
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+}

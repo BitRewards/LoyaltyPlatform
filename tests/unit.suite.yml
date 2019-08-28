@@ -1,0 +1,7 @@
+actor: UnitTester
+modules:
+    enabled:
+        - Asserts
+        - Laravel5
+        - \Helper\Unit
+        - \Helper\LaravelExtra

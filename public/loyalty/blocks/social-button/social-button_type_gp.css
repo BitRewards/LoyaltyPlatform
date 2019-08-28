@@ -1,0 +1,11 @@
+.social-button {
+  &_type_gp {
+    background-color: #dc4e41;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #e06054;
+    }
+  }
+}

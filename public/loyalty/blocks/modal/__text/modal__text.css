@@ -1,0 +1,11 @@
+.modal {
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+    word-break: break-word;
+    @media (--mobile) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}

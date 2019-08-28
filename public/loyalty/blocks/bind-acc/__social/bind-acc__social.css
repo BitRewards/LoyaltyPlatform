@@ -1,0 +1,5 @@
+.bind-acc {
+  &__social {
+    min-width: 120px;
+  }
+}

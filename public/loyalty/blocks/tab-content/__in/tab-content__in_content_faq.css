@@ -1,0 +1,12 @@
+.tab-content {
+  &__in_content_faq {
+    @media (--mobile) {
+      padding: 65px 0 *;
+    }
+    .tab-content__body {
+      @media (--mobile) {
+        padding: * 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.form {
+  &_content_share {
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: center;
+
+    .form-fields-group__title {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      font-family: var(--defaultFontSemiBold);
+      font-size: 18px;
+      color: #2e404b;
+    }
+
+    .form-fields-list__item {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .social-auth_content_share {
+      @media (--mobile) {
+        display: block;
+        margin-left: -10px;
+      }
+
+      .social-auth__item {
+        @media (--mobile) {
+          display: inline-block;
+          margin-left: 10px;
+          margin-top: 10px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

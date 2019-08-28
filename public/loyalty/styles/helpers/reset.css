@@ -1,0 +1,154 @@
+html {
+  -webkit-text-size-adjust: none;
+}
+html, body {
+  width: 100%;
+}
+html.is-overlayed {
+  height: 100%!important;
+  body {
+    height: 100%!important;
+    overflow: hidden!important;
+  }
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+}
+
+code, kbd, tt, pre {
+  font: 13px/20px "Courier New", Courier, monospace;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+del:hover, s:hover {
+  text-decoration: line-through;
+}
+
+legend {
+  display: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  color: var(--defaultColor);
+  font-size: 12px;
+  line-height: 16px;
+  font-family: var(--defaultFont);
+  height: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style-position: outside;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 0;
+}
+
+:focus {
+  outline: 0;
+}
+::-moz-selection {
+  background-color: #7caaee;
+  color: #ffffff;
+}
+
+::selection {
+  background-color: #7caaee;
+  color: #ffffff;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &.is-overlayed {
+    overflow: hidden;
+  }
+}
+h1, h2, h3, h4, h5, h6, b, strong {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+input::-ms-clear {
+  display: none;
+  width : 0;
+  height: 0;
+}
+input,
+textarea {
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+
+a {
+  color: var(--defaultColor);
+  text-decoration: none;
+  outline: 0;
+  &:hover,
+  &:focus {
+    outline: 0;
+  }
+}
+
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+[v-cloak] {
+  display: none;
+}

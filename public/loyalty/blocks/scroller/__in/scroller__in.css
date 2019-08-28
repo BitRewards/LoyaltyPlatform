@@ -1,0 +1,13 @@
+.scroller {
+  &__in {
+    padding-top: 30px;
+
+    @media (--mobile) {
+      padding-top: 0;
+    }
+
+    .scroller_viewtype_top & {
+      padding-top: 0;
+    }
+  }
+}

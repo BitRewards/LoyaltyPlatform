@@ -1,0 +1,10 @@
+.bullit-list {
+  &__icon {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    fill: var(--brandColor);
+  }
+}

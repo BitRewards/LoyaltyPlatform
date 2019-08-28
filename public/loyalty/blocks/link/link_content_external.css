@@ -1,0 +1,8 @@
+.link {
+  &_content_external {
+    .link__icon {
+      size: 10px;
+      fill: var(--brandColor);
+    }
+  }
+}

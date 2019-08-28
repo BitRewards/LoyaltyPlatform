@@ -1,0 +1,11 @@
+.made-by {
+  position: relative;
+  cursor: pointer;
+  &:hover,
+  &:focus,
+  &:active {
+    .made-by__icon {
+      opacity: 1;
+    }
+  }
+}

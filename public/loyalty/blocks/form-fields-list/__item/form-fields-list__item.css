@@ -1,0 +1,5 @@
+.form-fields-list {
+  &__item {
+    margin-bottom: 25px;
+  }
+}

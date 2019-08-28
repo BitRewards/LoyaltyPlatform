@@ -1,0 +1,9 @@
+#!/bin/sh
+echo "Running in ${ENV:-production} env...";
+
+if ([ "${ENV}" = "local" ] || [ "${ENV}" = "testing" ]) && [ -f docker-compose.yml ]
+then dockerfile=""
+else dockerfile="-f docker/_base.yml -f docker/${ENV:-production}.yml"
+fi
+
+ENV=${ENV:-production} docker-compose ${dockerfile} up -d

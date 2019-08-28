@@ -1,0 +1,24 @@
+.loyalty-popup {
+  &__close {
+    position: absolute;
+    top: center;
+    right: 20px;
+    size: 14px;
+    fill: #464f59;
+    cursor: pointer;
+    @media (--aboveMobile) {
+      right: 5px;
+      size: 20px;
+      fill: var(--defaultColor);
+      opacity: .6;
+      transition: opacity linear .3s;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      @media (--aboveMobile) {
+        opacity: 1;
+      }
+    }
+  }
+}

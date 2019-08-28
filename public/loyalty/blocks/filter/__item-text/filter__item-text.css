@@ -1,0 +1,40 @@
+.filter {
+  &__item-text {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 14px;
+    text-align: left;
+    color: #303545;
+    cursor: pointer;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #454e68;
+      opacity: 0;
+      transition: opacity .3s;
+      pointer-events: none;
+    }
+
+    &:hover {
+      &:before {
+        opacity: .03
+      }
+    }
+
+    &.is-active {
+      &:before {
+        background-color: var(--brandColor);
+        opacity: .06;
+      }
+    }
+  }
+}

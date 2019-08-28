@@ -1,0 +1,12 @@
+:root {
+  --fontSize: 1rem;
+  --defaultFont: "Open Sans", sans-serif;
+  --defaultFontLight: "Open Sans Light", sans-serif;
+  --defaultFontItalic: "Open Sans Italic", sans-serif;
+  --defaultFontItalicLight: "Open Sans Light Italic", sans-serif;
+  --defaultFontSemiBold: "Open Sans SemiBold", sans-serif;
+  --altFont: "PT Sans", "Open Sans", sans-serif;
+  --defaultColor: #2e404b;
+  --brandColor: #ffa729;
+  --inputErrorBg: #fff6f4;
+}

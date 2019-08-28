@@ -1,0 +1,17 @@
+.incut {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 20px 0;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--brandColor);
+    opacity: 0.08;
+    pointer-events: none;
+  }
+}

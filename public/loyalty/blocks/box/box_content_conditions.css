@@ -1,0 +1,13 @@
+.box {
+  &_content_conditions {
+    padding: 30px 20px;
+    font-size: 14px;
+    background-color: #fafafa;
+    border-radius: 3px;
+
+    .box__title {
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+  }
+}

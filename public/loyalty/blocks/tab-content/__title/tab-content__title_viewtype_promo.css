@@ -1,0 +1,7 @@
+.tab-content {
+  &__title_viewtype_promo {
+    max-width: 500px;
+    margin: 0 auto 15px;
+    font-size: 28px;
+  }
+}

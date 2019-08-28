@@ -1,0 +1,15 @@
+.dropdown {
+  &__in {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background-color: rgba(73, 78, 92, 0);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: rgba(73, 78, 92, 0.06);
+    }
+  }
+}

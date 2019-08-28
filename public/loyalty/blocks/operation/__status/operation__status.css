@@ -1,0 +1,27 @@
+.operation {
+  &__status {
+    flex-shrink: 0;
+    align-self: center;
+    width: 110px;
+    padding: 0 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 11px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-overflow: ellipsis;
+    border-radius: 7px;
+    box-sizing: border-box;
+    @media (--mobile) {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    @media (--tabletPortrait) {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

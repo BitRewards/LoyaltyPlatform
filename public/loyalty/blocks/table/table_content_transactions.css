@@ -1,0 +1,18 @@
+.table {
+  &_content_transactions {
+    .table__row {
+      &.is-canceled {
+        opacity: .6;
+      }
+    }
+
+    .table__cell {
+      &_content_sender {
+        @media (--aboveTabletPortrait) {
+          max-width: 0;
+          width: 34%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.field-composition {
+  &__title {
+    position: absolute;
+    clip: rect(0px 0px 0px 0px);
+
+    &.is-show {
+      position: static;
+      clip: auto;
+    }
+  }
+}

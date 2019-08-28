@@ -1,0 +1,21 @@
+.welcome {
+  &__logout {
+    position: relative;
+    padding-left: 10px;
+    font-family: var(--defaultFont);
+    font-size: 13px;
+    line-height: 17px;
+    color: #fff;
+    opacity: .5;
+    cursor: pointer;
+    transition: opacity linear .3s;
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+      .welcome__logout-icon {
+        transform: translate(-5px, -50%);
+      }
+    }
+  }
+}

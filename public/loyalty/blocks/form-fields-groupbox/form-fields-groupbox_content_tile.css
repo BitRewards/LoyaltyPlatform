@@ -1,0 +1,17 @@
+.form-fields-groupbox {
+  &_content_tile {
+    .form-fields-groupbox__section {
+      max-width: 216px;
+      width: 100%;
+      margin-left: 20px;
+
+      @media (--mobile) {
+        margin-left: 0;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

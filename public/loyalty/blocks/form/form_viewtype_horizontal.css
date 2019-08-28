@@ -1,0 +1,13 @@
+.form {
+  &_viewtype_horizontal {
+    .form-fields-list__item {
+      margin-bottom: 8px;
+    }
+
+    .field-composition__title {
+      @media (--mobile) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.content-columns {
+  &_content_instruction {
+    max-width: 564px;
+    margin: 0 auto;
+
+    @media (--aboveTabletPortrait) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .content-column {
+      &_layout_b {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+
+        @media (--aboveTabletPortrait) {
+          flex-shrink: 0;
+          width: auto;
+          margin-top: 0;
+          margin-left: 40px;
+          text-align: left;
+        }
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

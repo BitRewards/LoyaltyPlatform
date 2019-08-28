@@ -1,0 +1,8 @@
+.tab-content {
+  &__title_viewtype_elki {
+    margin-bottom: 20px;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 30px;
+    text-align: left;
+  }
+}

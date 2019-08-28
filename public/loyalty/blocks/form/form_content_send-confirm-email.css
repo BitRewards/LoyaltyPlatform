@@ -1,0 +1,13 @@
+.form {
+  &_content_send-confirm-email {
+    max-width: 280px;
+    margin: 0 auto;
+    padding-top: 30px;
+
+    &.is-success {
+      .form-fields-list__item_content_submit {
+        display: none;
+      }
+    }
+  }
+}

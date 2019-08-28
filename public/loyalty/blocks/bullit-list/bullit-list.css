@@ -1,0 +1,11 @@
+.bullit-list {
+  @mixin list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  color: #2e404b;
+
+  @media (--aboveMobile) {
+    justify-content: center;
+  }
+}

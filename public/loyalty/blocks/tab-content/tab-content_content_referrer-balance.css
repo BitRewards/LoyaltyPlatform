@@ -1,0 +1,11 @@
+.tab-content {
+  &_content_referrer-balance {
+    @media (--mobile) {
+      overflow: auto;
+    }
+
+    @media (--tabletPortrait) {
+      overflow: auto;
+    }
+  }
+}

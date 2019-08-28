@@ -1,0 +1,11 @@
+.warning {
+  &__title {
+    margin-bottom: 6px;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 16px;
+
+    .warning__item.is-danger & {
+      color: #de4a2c;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+.tab-content {
+  &__header_content_image {
+    text-align: center;
+  }
+}

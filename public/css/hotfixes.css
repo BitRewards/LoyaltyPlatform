@@ -1,0 +1,34 @@
+@media (max-width: 767px) {
+  .main-header .logo {
+    display: none;
+  }
+}
+
+.js-bulk-preview {
+  display: none;
+}
+
+.main-header .logo {
+  font-size: 14px;
+  width: 245px;
+}
+
+@media (min-width: 768px) {
+  .main-header .navbar {
+    margin-left: 245px;
+  }
+}
+
+.dont-break-out {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+.user-panel>.info {
+  position: relative;
+  margin-left: 45px;
+  left: 0;
+}
+

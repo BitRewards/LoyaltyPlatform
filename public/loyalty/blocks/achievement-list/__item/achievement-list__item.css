@@ -1,0 +1,9 @@
+.achievement-list {
+  &__item {
+    flex-basis: 360px;
+    margin-bottom: 20px;
+    @media (--tabletLandscape) {
+      flex-basis: 320px;
+    }
+  }
+}

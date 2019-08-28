@@ -1,0 +1,9 @@
+.sidemenu {
+  &__header {
+    margin-bottom: 10px;
+    padding: * 20px;
+    @media (--aboveMobile) {
+      margin-bottom: 20px;
+    }
+  }
+}

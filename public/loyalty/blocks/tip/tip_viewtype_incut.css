@@ -1,0 +1,9 @@
+.tip {
+  &_viewtype_incut {
+    margin-top: 60px;
+
+    @media (--aboveMobile) {
+      margin-top: 0;
+    }
+  }
+}

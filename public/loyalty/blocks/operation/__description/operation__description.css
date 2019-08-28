@@ -1,0 +1,13 @@
+.operation {
+  &__description {
+    flex-grow: 1;
+    @media (--mobile) {
+      margin-bottom: 8px;
+      padding-left: 55px;
+    }
+    @media (--tabletPortrait) {
+      margin-bottom: 8px;
+      padding-left: 55px;
+    }
+  }
+}

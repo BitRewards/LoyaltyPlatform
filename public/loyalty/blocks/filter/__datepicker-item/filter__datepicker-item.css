@@ -1,0 +1,65 @@
+.filter {
+  &__datepicker-item {
+    +.filter__datepicker-item {
+      position: relative;
+      margin-left: 8px;
+
+      @media (--mobile) {
+        position: static;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        width: 8px;
+        height: 1px;
+        margin-top: -1px;
+        background-color: rgba(48, 53, 69, .3);
+      }
+    }
+
+    .vdp-datepicker {
+      position: static;
+
+      &__calendar {
+        @media (--mobile) {
+          left: 0;
+        }
+      }
+
+      input {
+        width: 120px;
+        height: 32px;
+        padding-left: 32px;
+        padding-right: 5px;
+        font-size: 14px;
+        color: #303545;
+        background-color: #fff;
+        border-radius: 3px;
+        border: 1px solid rgba(48, 53, 69, .3);
+        box-sizing: border-box;
+        transition: border-color .3s;
+
+        &:focus {
+          border-color: var(--brandColor);
+        }
+
+        &.calendar-from {
+          background-image: url('/loyalty/images/svg/calendar-from.svg');
+          background-size: 14px 16px;
+          background-repeat: no-repeat;
+          background-position: 9px;
+        }
+
+        &.calendar-to {
+          background-image: url('/loyalty/images/svg/calendar-to.svg');
+          background-size: 14px 16px;
+          background-repeat: no-repeat;
+          background-position: 9px;
+        }
+      }
+    }
+  }
+}

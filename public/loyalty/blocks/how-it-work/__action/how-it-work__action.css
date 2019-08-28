@@ -1,0 +1,6 @@
+.how-it-work {
+  &__action {
+    max-width: 246px;
+    margin: 30px auto 0;
+  }
+}

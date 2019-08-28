@@ -1,0 +1,12 @@
+.tab-content {
+  &__in_content_referrer-balance {
+    @media (--mobile) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    .tab-content__header {
+      margin-bottom: 0;
+    }
+  }
+}

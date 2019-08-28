@@ -1,0 +1,5 @@
+.link {
+  &_viewtype_standard {
+    color: var(--brandColor);
+  }
+}

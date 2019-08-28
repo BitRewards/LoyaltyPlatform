@@ -1,0 +1,9 @@
+.withdraw-terms {
+  &__list {
+    @mixin list-reset;
+
+    @media (--aboveMobile) {
+      display: inline-block;
+    }
+  }
+}

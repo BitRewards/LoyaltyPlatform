@@ -1,0 +1,11 @@
+.achievement {
+  &__thumbnail {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    z-index: 1;
+    size: 60px;
+    background-color: var(--brandColor);
+    border-radius: 50%;
+  }
+}

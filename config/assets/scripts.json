@@ -1,0 +1,19 @@
+{
+    "loyalty": [
+        "js/jquery-2.2.0.min.js",
+        "js/jquery.iframetracker.js",
+        "loyalty/js/sweetalert.min.js",
+        "loyalty/js/tel-input-utils.js",
+        "loyalty/js/vendor/tipped.js",
+        "loyalty/js/app.min.js",
+        "js/share.js",
+        "js/share-vk.js",
+        "js/share-fb.js",
+        "loyalty/js/blocks/common.js",
+        "loyalty/js/blocks/join-vk.js",
+        "loyalty/js/blocks/join-fb.js",
+        "loyalty/js/blocks/share-vk.js",
+        "loyalty/js/blocks/share-fb.js",
+        "loyalty/js/blocks/reward.js"
+    ]
+}

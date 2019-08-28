@@ -1,0 +1,6 @@
+.tip {
+  &__text {
+    font-size: 16px;
+    color: #3b4255;
+  }
+}

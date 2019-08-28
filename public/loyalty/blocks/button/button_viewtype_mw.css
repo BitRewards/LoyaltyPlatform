@@ -1,0 +1,6 @@
+.button {
+  &_viewtype_mw {
+    max-width: 260px;
+    width: 100%;
+  }
+}

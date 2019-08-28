@@ -1,0 +1,11 @@
+.tab-content {
+  &__action_content_withdraw {
+    margin-top: 30px;
+    max-width: 246px;
+
+    @media (--aboveTabletPortrait) {
+      max-width: 246px;
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.modal {
+  &_content_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 740px;
+    width: 100%;
+    min-height: 384px;
+    text-align: center;
+  }
+}

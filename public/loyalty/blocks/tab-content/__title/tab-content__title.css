@@ -1,0 +1,27 @@
+.tab-content {
+  &__title {
+    margin-bottom: 5px;
+    font-family: var(--defaultFont);
+    font-size: 30px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--defaultColor);
+
+    @media (--mobile) {
+      font-size: 23px;
+      line-height: 27px;
+    }
+
+    .tab-content_content_create-password & {
+      margin-bottom: 0;
+    }
+
+    .tab-content_content_dashboard & {
+      text-align: left;
+    }
+
+    b {
+      font-family: var(--defaultFontSemiBold);
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.modal {
+  &_viewtype_wide {
+    width: 700px;
+
+    @media (--mobile) {
+      width: 300px;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+.social-button {
+  &_type_mail {
+    background-color: #f2f3f4;
+  }
+}

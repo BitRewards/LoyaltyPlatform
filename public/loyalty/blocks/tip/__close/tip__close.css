@@ -1,0 +1,23 @@
+.tip {
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      bottom: -5px;
+      left: -5px;
+    }
+
+    &:hover {
+      .tip__close-icon {
+        opacity: 1;
+      }
+    }
+  }
+}

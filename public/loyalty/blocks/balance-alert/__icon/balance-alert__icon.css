@@ -1,0 +1,31 @@
+.balance-alert {
+  &__icon {
+    size: 25px 28px;
+    fill: #fff;
+    .balance-alert.is-animate & {
+      transform-origin: center;
+      animation: swing 2s infinite both;
+    }
+  }
+}
+
+@keyframes swing {
+  0%, 29% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  30% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  35% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  40% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  45% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+  50%, to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}

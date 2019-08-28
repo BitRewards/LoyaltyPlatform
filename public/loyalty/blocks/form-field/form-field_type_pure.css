@@ -1,0 +1,10 @@
+.form-field {
+  &_type_pure {
+    padding: 0;
+    border: none;
+    font-family: var(--defaultFontSemiBold)!important;
+    font-size: 15px;
+    line-height: normal;
+    -webkit-appearance: none;
+  }
+}

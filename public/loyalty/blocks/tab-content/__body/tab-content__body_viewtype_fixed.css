@@ -1,0 +1,115 @@
+.tab-content__body {
+  &_viewtype_fixed {
+    position: relative;
+    height: 410px;
+    overflow: hidden;
+    margin-top: -30px;
+    padding-bottom: 15px;
+
+    .loyalty-popup_bit & {
+      height: 530px;
+
+      @media (--mobile) {
+        height: auto;
+      }
+    }
+
+    .tab-content__in_content_balance & {
+      .loyalty-popup_bit & {
+        height: 350px;
+      }
+
+       @media (--mobile) {
+        height: auto;
+
+        .loyalty-popup_bit & {
+          height: auto;
+        }
+      }
+    }
+
+    .tab-content__in_content_referrer-balance & {
+
+      &:before {
+        @media (--mobile) {
+          content: none;
+        }
+      }
+
+      .loyalty-popup_bit & {
+        margin-top: 0;
+        height: 200px;
+      }
+
+      @media (--mobile) {
+        height: auto;
+
+        .loyalty-popup_bit & {
+          height: auto;
+        }
+      }
+
+      @media (--tabletPortrait) {
+        height: auto;
+
+        .loyalty-popup_bit & {
+          height: auto;
+        }
+      }
+    }
+
+    .tab-content__in_content_collect-points.is-tip-show & {
+      flex-grow: 1;
+      height: 100%;
+    }
+
+    .tab-content_content_dashboard & {
+      height: 570px;
+
+      @media (--mobile) {
+        height: auto;
+        overflow: visible;
+        margin-top: 0;
+      }
+    }
+
+    @media (--mobile) {
+      height: auto;
+      overflow: visible;
+      margin-top: 0;
+      padding: * 8px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 20px;
+      left: 0;
+      z-index: 10;
+      height: 30px;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0) 100%); 
+      pointer-events: none;
+
+      .tab-content_deposit &,
+      .tab-content_withdraw &,
+      .tab-content_settings &,
+      .tab-content_profile & {
+        @media (--mobile) {
+          content: none;
+        }
+      }
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+      left: 0;
+      z-index: 10;
+      height: 30px;
+      background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0) 100%); 
+      pointer-events: none;
+    }
+  }
+}

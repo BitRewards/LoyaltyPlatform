@@ -1,0 +1,17 @@
+.modal {
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    size: 15px;
+    fill: var(--defaultColor);
+    opacity: .8;
+    cursor: pointer;
+    transition: opacity linear .3s;
+    transform: translateZ(0);
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}

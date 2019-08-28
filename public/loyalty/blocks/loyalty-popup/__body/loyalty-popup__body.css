@@ -1,0 +1,23 @@
+.loyalty-popup {
+  &__body {
+    height: 504px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .06);
+
+    .loyalty-popup_bit & {
+      height: 604px;
+
+      @media (--mobile) {
+        height: auto;
+      }
+    }
+
+    @media (--mobile) {
+      min-height: 100vh;
+      height: auto;
+      box-shadow: none;
+      border-radius: 0;
+    }
+  }
+}

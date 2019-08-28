@@ -1,0 +1,10 @@
+.tab-content {
+  &__header-image_content_referrer {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    background-color: var(--brandColor);
+    border-radius: 50%;
+  }
+}

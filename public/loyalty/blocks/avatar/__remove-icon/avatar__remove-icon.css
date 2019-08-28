@@ -1,0 +1,12 @@
+.avatar {
+  &__remove-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,28 @@
+.tab {
+  &__title {
+    position: relative;
+    float: left;
+    width: 50%;
+    min-height: 44px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    line-height: 1.15;
+    color: #303545;
+    border-bottom: 2px solid transparent;
+    opacity: .5;
+    transition: border-bottom-color .3s, opacity .3s;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+
+    @media (--aboveTabletPortrait) {
+      min-height: 73px;
+      font-size: 25px;
+    }
+
+    &:hover,
+    &.is-active {
+      border-bottom-color: var(--brandColor);
+      opacity: 1;
+    }
+  }
+}

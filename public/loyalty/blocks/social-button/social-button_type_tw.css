@@ -1,0 +1,11 @@
+.social-button {
+  &_type_tw {
+    background-color: #1da1f2;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #34abf3;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Running in ${ENV:-production} env...";
+echo "cd /crm/current/ && $*"
+
+if ([ "${ENV}" = "local" ] || [ "${ENV}" = "testing" ]) && [ -f docker-compose.yml ]
+then dockerfile=""
+else dockerfile="-f docker/_base.yml -f docker/${ENV:-production}.yml"
+fi
+
+COMPOSE_INTERACTIVE_NO_CLI=1 ENV=${ENV:-production} docker-compose ${dockerfile} exec -T crm sh -c "cd /crm/current/ && $*"

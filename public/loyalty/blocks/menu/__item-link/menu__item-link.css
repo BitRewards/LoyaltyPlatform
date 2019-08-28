@@ -1,0 +1,44 @@
+.menu {
+  &__item-link {
+    position: relative;
+    display: block;
+    height: 60px;
+    padding: * 45px * 60px;
+    font-family: var(--defaultFont);
+    font-size: 13px;
+    line-height: 60px;
+    color: #fff;
+    cursor: pointer;
+    outline: 0;
+    user-select: none;
+    transition: background-color linear .3s;
+    &:after {
+      @media (--aboveMobile) {
+        content: "";
+        position: absolute;
+        top: center;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 11px 11px 11px 0;
+        border-color: transparent #fff transparent transparent;
+        opacity: 0;
+        transition: opacity linear .3s;
+      }
+    }
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 255, 255, .05);
+    }
+    &.is-active {
+      font-family: var(--defaultFontSemiBold);
+      background-color: rgba(0, 0, 0, .25);
+      &:after {
+        @media (--aboveMobile) {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

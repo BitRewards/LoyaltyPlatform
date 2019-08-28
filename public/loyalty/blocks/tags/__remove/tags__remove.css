@@ -1,0 +1,15 @@
+.tags {
+  &__remove {
+    position: absolute;
+    top: center;
+    right: 5px;
+    size: 8px;
+    fill: #fff;
+    opacity: .8;
+    cursor: pointer;
+    transition: opacity linear .3s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

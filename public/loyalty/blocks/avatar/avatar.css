@@ -1,0 +1,26 @@
+.avatar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  size: 60px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #cfcfcf;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity linear .3s .3s;
+  transform: translateX(-50%);
+  pointer-events: none;
+  .is-image-loaded & {
+    opacity: 1;
+    pointer-events: auto;
+
+    &:hover {
+      .avatar__remove {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+  }
+}

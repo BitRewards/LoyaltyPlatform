@@ -1,0 +1,9 @@
+.operation {
+  &__icon_content_get-discount {
+    position: static;
+    size: 60px;
+    margin: 0;
+    fill: var(--brandColor);
+    transform: none;
+  }
+}

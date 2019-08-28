@@ -1,0 +1,10 @@
+.calculator {
+  &__total-sum {
+    font-family: var(--defaultFontSemiBold);
+    font-size: 16px;
+
+    @media (--mobile) {
+      font-size: 14px;
+    }
+  }
+}

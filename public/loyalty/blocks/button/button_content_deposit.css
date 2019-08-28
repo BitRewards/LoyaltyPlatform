@@ -1,0 +1,64 @@
+.button {
+  &_content_deposit {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    padding-left: 80px;
+    line-height: 1.2;
+    text-align: left;
+    border: 1px solid #eaeaec;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(48, 54, 69, .08);
+    transition: border-color .3s;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      width: 48px;
+      height: 48px;
+      border-radius: 5px;
+      background-color: var(--brandColor);
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      border-color: var(--brandColor);
+    }
+
+    .button__text {
+      font-family: var(--defaultFont);
+      font-size: 16px;
+      line-height: 1.2;
+
+      @media (--mobile) {
+        font-size: 16px;
+      }
+    }
+
+    .button__icon {
+      position: absolute;
+      top: 50%;
+      left: 26px;
+      fill: #fff;
+      transform: translateY(-50%);
+
+      &_content_wallet {
+        left: 27px;
+        width: 24px;
+        height: 23px;
+      }
+
+      &_content_shop {
+        width: 26px;
+        height: 24px;
+      }
+
+      &_content_exchange {
+        width: 25px;
+        height: 27px;
+      }
+    }
+  }
+}

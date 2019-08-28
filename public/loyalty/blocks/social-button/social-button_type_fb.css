@@ -1,0 +1,11 @@
+.social-button {
+  &_type_fb {
+    background-color: #3b5998;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #4f6aa3;
+    }
+  }
+}

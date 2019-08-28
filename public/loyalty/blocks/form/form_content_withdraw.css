@@ -1,0 +1,33 @@
+.form {
+  &_content_withdraw {
+    max-width: 564px;
+    margin: 0 auto;
+
+    .form-fields-group__title {
+      display: block;
+      margin-bottom: 20px;
+      font-family: var(--defaultFontSemiBold);
+      font-size: 24px;
+      line-height: normal;
+      letter-spacing: -1px;
+    }
+
+    .form-fields-group__title.withdraw-without-magic-number {
+      display: none;
+    }
+
+    .form-fields-list__item {
+      margin-bottom: 20px;
+    }
+    .form-fields-list__item.withdraw-without-magic-number {
+      display: none;
+    }
+
+    .field-composition__title {
+      position: relative;
+      margin-bottom: 5px;
+      clip: auto;
+    }
+  }
+}
+

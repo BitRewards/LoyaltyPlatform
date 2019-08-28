@@ -1,0 +1,5 @@
+.achievement {
+  &_viewtype_success {
+    cursor: default;
+  }
+}

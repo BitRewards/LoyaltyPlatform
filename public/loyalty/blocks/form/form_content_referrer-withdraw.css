@@ -1,0 +1,23 @@
+.form {
+  &_content_referrer-withdraw {
+    max-width: 360px;
+    text-align: left;
+
+    .form-fields-list__item {
+      margin-bottom: 15px;
+
+      &_viewtype_total {
+        margin-bottom: 30px;
+        padding-top: 12px;
+        font-family: var(--defaultFontSemiBold);
+        border-top: 2px solid rgba(48, 54, 71, .2);
+      }
+
+      &_content_submit {
+        @media (--mobile) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

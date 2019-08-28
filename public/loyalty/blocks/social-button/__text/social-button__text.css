@@ -1,0 +1,13 @@
+.social-button {
+  &__text {
+    position: absolute;
+    clip: rect(0px 0px 0px 0px);
+    .social-button_viewtype_rectangle & {
+      position: static;
+      font-family: var(--defaultFontSemiBold);
+      font-size: 15px;
+      line-height: 46px;
+      color: #fff;
+    }
+  }
+}

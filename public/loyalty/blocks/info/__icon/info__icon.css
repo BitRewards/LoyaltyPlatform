@@ -1,0 +1,8 @@
+.info {
+  &__icon {
+    width: 16px;
+    height: 16px;
+    fill: rgba(15, 15, 15, .2);
+    transition: fill .3s;
+  }
+}

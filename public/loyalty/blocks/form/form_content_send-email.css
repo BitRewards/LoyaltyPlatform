@@ -1,0 +1,13 @@
+.form {
+  &_content_send-email {
+    .form-fields-list__item {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &_content_submit {
+        text-align: center;
+      }
+    }
+  }
+}

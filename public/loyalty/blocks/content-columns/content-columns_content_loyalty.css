@@ -1,0 +1,31 @@
+.content-columns {
+  &_content_loyalty {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    @media (--mobile) {
+      overflow: hidden;
+    }
+    >.content-column {
+      &_layout_a {
+        flex-grow: 1;
+        flex-shrink: 0;
+        width: 240px;
+        height: 100%;
+        @media (--mobile) {
+          width: 0;
+          height: 100%;
+        }
+      }
+      &_layout_b {
+        width: 100%;
+        height: 100%;
+        min-width: 0;
+      }
+      .content-column__in {
+        position: relative;
+        height: 100%;
+      }
+    }
+  }
+}

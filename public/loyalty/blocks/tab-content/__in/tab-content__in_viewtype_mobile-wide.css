@@ -1,0 +1,7 @@
+.tab-content {
+  &__in_viewtype_mobile-wide {
+    @media (--mobile) {
+      padding: * 0;
+    }
+  }
+}

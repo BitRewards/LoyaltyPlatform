@@ -1,0 +1,8 @@
+.offer {
+  &__title_viewtype_elki {
+    height: auto;
+    font-size: 22px;
+    line-height: normal;
+    white-space: normal;
+  }
+}

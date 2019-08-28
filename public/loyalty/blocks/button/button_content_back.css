@@ -1,0 +1,8 @@
+.button {
+  &_content_back {
+    .button__icon {
+      width: 7px;
+      height: 11px;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.achievement {
+  &__bonus {
+    font-family: var(--defaultFontSemiBold);
+    font-size: 15px;
+    line-height: 19px;
+  }
+}

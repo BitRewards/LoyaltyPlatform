@@ -1,0 +1,5 @@
+.offer {
+  &__text_viewtype_price {
+    transition: opacity linear .3s;
+  }
+}

@@ -1,0 +1,6 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/bootstrap/custom_autoload.php';
+
+PHPUnit_TextUI_Command::main();

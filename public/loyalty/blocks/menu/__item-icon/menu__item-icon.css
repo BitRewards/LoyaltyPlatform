@@ -1,0 +1,13 @@
+.menu {
+  &__item-icon {
+    position: absolute;
+    top: center;
+    left: 20px;
+    fill: rgba(255, 255, 255, .25);
+    stroke: rgba(255, 255, 255, .25);
+    transition: fill linear .3s, stroke linear .3s;
+    .menu__item-link.is-active & {
+      fill: var(--brandColor);
+    }
+  }
+}

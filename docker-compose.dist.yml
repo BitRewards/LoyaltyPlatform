@@ -1,0 +1,55 @@
+version: '3.5'
+
+services:
+  db:
+    container_name: crm-db
+    image: postgres:9.6
+    volumes:
+      - ~/.docker/volumes/giftd-crm-db:/data:cached
+
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-crm_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-12345}
+      POSTGRES_DB: ${POSTGRES_DB:-crm}
+      PGDATA: /data
+
+    ports:
+      - 5432:5432
+
+    networks:
+      - giftd
+
+  crm:
+    container_name: crm
+
+    build:
+      context: ./docker
+      cache_from:
+        - ubuntu:16.04
+
+    entrypoint: /crm/current/docker/bin/startup.sh
+    environment:
+      APP_ENV: ${APP_ENV:-local}
+      PATH: "$PATH:/crm/current/docker/bin:/crm/current/vendor/bin"
+
+    volumes:
+      - .:/crm/current:cached
+      - ./docker/supervisord/laravel-worker.conf:/etc/supervisor/conf.d/laravel-worker.conf.raw
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./docker/php/fpm/pool.d/www.conf:/etc/php/7.2/fpm/pool.d/www.conf.raw
+      - ./docker/php/fpm/conf.d/xdebug.ini:/etc/php/7.2/fpm/conf.d/20-xdebug.ini
+
+    working_dir: /crm/current
+
+    expose:
+      - 8891
+
+    depends_on:
+      - db
+
+    networks:
+      - giftd
+
+networks:
+  giftd:
+    external: true

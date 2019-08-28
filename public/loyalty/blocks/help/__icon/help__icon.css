@@ -1,0 +1,12 @@
+.help {
+  &__icon {
+    position: absolute;
+    top: center;
+    left: 0;
+    size: 16px;
+    fill: #fff;
+    .loyalty-popup__tab-title & {
+      display: none;
+    }
+  }
+}

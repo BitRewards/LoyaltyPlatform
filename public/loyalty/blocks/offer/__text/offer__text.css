@@ -1,0 +1,11 @@
+.offer {
+  &__text {
+    font-family: var(--defaultFontSemiBold);
+    font-size: 14px;
+    .offer__status_viewtype_get & {
+      font-size: 15px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+}

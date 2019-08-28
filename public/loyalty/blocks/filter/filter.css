@@ -1,0 +1,17 @@
+.filter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #303545;
+
+  @media (--mobile) {
+    display: block;
+  }
+
+  @media (--tabletPortrait) {
+    display: block;
+  }
+}

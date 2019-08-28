@@ -1,0 +1,13 @@
+.table {
+  &_viewtype_small-fields {
+    .table__heading {
+      padding-right: 6px;
+      padding-left: 6px;
+    }
+
+    .table__cell {
+      padding-right: 6px;
+      padding-left: 6px;
+    }
+  }
+}

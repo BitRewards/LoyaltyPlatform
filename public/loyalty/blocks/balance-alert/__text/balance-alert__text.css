@@ -1,0 +1,28 @@
+.balance-alert {
+  &__text {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    size: 25px 22px;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--brandColor);
+    .balance-alert.is-animate & {
+      animation: textGrow 2s linear infinite;
+    }
+  }
+}
+
+@keyframes textGrow {
+  from {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.4);
+  }
+  30%, to {
+    transform: scale(1);
+  }
+}

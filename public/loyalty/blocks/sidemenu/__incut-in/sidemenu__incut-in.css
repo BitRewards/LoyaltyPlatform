@@ -1,0 +1,25 @@
+.sidemenu {
+  &__incut-in {
+    position: relative;
+    padding: 15px 50px 15px 20px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .3s linear;
+    }
+
+    .sidemenu__incut:not(.is-active):hover & {
+      &:after {
+        opacity: .05;
+      }
+    }
+  }
+}

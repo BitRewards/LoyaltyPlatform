@@ -1,0 +1,57 @@
+.form-field-label {
+  &_viewtype_float {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    display: block;
+    padding-left: 3px;
+    padding-right: 3px;
+    background: #fff;
+    font-family: var(--defaultFontItalic);
+    font-size: 17px;
+    color: var(--defaultColor);
+    opacity: .5;
+    transform: translate3d(0, -50%, 0);
+    cursor: text;
+    user-select: none;
+    pointer-events: none;
+    transform-origin: 0 0;
+    transition: transform ease .3s .15s, opacity linear .3s .15s, font-size linear .3s .15s, color linear .3s .15s, background-color linear .3s .001s, top ease .3s .15s;
+    &.form-field-label_type_textarea {
+      top: 12px;
+      transform: none;
+    }
+    .form-field.is-error + & {
+      background: var(--inputErrorBg);
+      color: rgb(171, 46, 18)!important;
+    }
+  }
+  .form-field_type_text:focus:not(:valid) + &,
+  .form-field_type_text:focus:valid + &,
+  .form-field_type_text:valid + &,
+  .form-field_type_textarea:focus:not(:valid) + &,
+  .form-field_type_textarea:focus:valid + &,
+  .form-field_type_textarea:valid + & {
+    font-size: 11px;
+    color: var(--brandColor);
+    transform: translate3d(0, -183%, 0);
+    opacity: 1;
+    &.form-field-label_type_textarea {
+      transform: translate3d(0, -21px, 0);
+    }
+  }
+  .tags.is-filled &,
+  .tags.is-focused &,
+  .tags.is-filled.is-focused &,
+  .tags.is-filled:hover & {
+    top: 0;
+    font-size: 11px;
+    color: var(--brandColor);
+    opacity: 1;
+  }
+  .tags.is-filled &,
+  .form-field_type_text:valid + &,
+  .form-field_type_textarea:valid + & {
+    color: #7b7b7b;
+  }
+}

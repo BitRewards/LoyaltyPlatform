@@ -1,0 +1,23 @@
+.person {
+  &_viewtype_badge {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(48, 54, 69, .03);
+    border-radius: 3px;
+    cursor: default;
+
+    .person__avatar {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    .person__name {
+      display: inline-block;
+      vertical-align: middle;
+      font-family: var(--defaultFontSemiBold);
+      font-size: 16px;
+      color: #2e404b;
+    }
+  }
+}

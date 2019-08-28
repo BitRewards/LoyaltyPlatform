@@ -1,0 +1,9 @@
+.warning {
+  &__text {
+    font-size: 14px;
+
+    .warning__item.is-danger & {
+      color: #de4a2c;
+    }
+  }
+}

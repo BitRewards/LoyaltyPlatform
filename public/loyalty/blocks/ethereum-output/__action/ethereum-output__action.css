@@ -1,0 +1,6 @@
+.ethereum-output {
+  &__action {
+    max-width: 270px;
+    margin: 0 auto;
+  }
+}

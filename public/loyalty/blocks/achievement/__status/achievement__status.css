@@ -1,0 +1,8 @@
+.achievement {
+  &__status {
+    position: relative;
+    padding: 14px * 14px 94px;
+    background-color: #f6f8f9;
+    border-radius: 0 0 4px 4px;
+  }
+}

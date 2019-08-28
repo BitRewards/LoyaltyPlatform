@@ -1,0 +1,10 @@
+.popover-context {
+  &_content_add {
+    width: 220px;
+
+    @media (--mobile) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

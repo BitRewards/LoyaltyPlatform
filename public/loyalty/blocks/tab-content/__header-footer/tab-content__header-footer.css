@@ -1,0 +1,10 @@
+.tab-content {
+  &__header-footer {
+    max-width: 400px;
+    margin: 0 auto;
+
+    @media (--aboveMobile) {
+      max-width: none;
+    }
+  }
+}

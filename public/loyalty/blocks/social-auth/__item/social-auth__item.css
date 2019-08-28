@@ -1,0 +1,12 @@
+.social-auth {
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+    @mixin undo-font-reset;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

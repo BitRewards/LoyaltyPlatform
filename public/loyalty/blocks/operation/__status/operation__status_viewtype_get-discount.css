@@ -1,0 +1,8 @@
+.operation {
+  &__status_viewtype_get-discount {
+    padding: 0;
+    background: var(--brandColor);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

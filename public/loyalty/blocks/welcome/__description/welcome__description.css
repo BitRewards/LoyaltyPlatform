@@ -1,0 +1,9 @@
+.welcome {
+  &__description {
+    display: inline-block;
+    vertical-align: middle;
+    width: 135px;
+    @mixin undo-font-reset;
+    white-space: normal;
+  }
+}

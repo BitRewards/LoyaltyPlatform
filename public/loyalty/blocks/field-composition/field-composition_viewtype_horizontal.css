@@ -1,0 +1,23 @@
+.field-composition {
+  &_viewtype_horizontal {
+
+    @media (--aboveMobile) {
+      display: flex;
+      align-items: center;
+    }
+
+    .field-composition {
+      &__title {
+        position: static;
+        flex-basis: 200px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        clip: auto;
+      }
+
+      &__content {
+        flex-grow: 1;
+      }
+    }
+  }
+}

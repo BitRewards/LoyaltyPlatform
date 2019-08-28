@@ -1,0 +1,11 @@
+.tab-content {
+  &__header-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 68px;
+    margin-top: 8px;
+    transform: translate(-50%, -50%);
+  }
+}

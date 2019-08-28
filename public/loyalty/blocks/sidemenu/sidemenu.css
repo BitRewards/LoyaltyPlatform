@@ -1,0 +1,50 @@
+.sidemenu {
+  position: relative;
+  height: 100%;
+  padding: 20px * 45px;
+  color: #fff;
+  background-color: #24395f;
+  border-radius: 5px 0 0 5px;
+  box-sizing: border-box;
+  @media (--mobile) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 12;
+    width: 268px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform linear .3s, opacity linear .3s;
+    border-radius: 0;
+  }
+  &:after {
+    @media (--mobile) {
+      content: "";
+      position: absolute;
+      top: 19px;
+      left: 100%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent #24395f;
+      opacity: 0;
+      transition: opacity linear .3s;
+    }
+  }
+  &.is-show {
+    @media (--mobile) {
+      transform: translateX(0);
+      opacity: 1;
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+  &.is-animatable {
+    @media (--mobile) {
+      transition: transform 0.3s cubic-bezier(0, 0, 0.3, 1);
+    }
+  }
+}

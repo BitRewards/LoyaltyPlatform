@@ -1,0 +1,26 @@
+.balance {
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    line-height: 1;
+    transform: translateY(-50%);
+
+    &:before {
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      transform: rotate(45deg);
+      transition: transform .3s linear;
+    }
+
+    .sidemenu__incut:not(.is-active):hover & {
+      &:before {
+        transform: rotate(45deg) scale(1.1);
+      }
+    }
+  }
+}

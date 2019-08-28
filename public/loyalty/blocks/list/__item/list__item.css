@@ -1,0 +1,13 @@
+.list {
+  &__item {
+    padding: 10px;
+    border-top: 1px solid #edf0f3;
+    background-color: #fdfdfd;
+    &:first-child{
+      border-top-color: transparent;
+    }
+    .list__item_viewtype_use + & {
+      border-top: none;
+    }
+  }
+}

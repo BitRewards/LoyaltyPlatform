@@ -1,0 +1,26 @@
+.content-columns {
+  &_content_faq-header {
+    >.content-column {
+      vertical-align: middle;
+      &_layout_a {
+        width: 60%;
+      }
+      &_layout_b {
+        width: 40%;
+        text-align: right;
+        @media (--mobile) {
+          width: 100%;
+          text-align: center;
+        }
+        .content-column__in {
+          @media (--mobile) {
+            padding-top: 10px;
+          }
+          @media (--aboveMobile) {
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}

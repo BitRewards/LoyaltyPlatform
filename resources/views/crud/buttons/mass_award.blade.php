@@ -1,0 +1,1 @@
+<a href="{{'/admin/createMassAward' }}" data-style="zoom-in" class="btn btn-primary ladda-button"><span class="ladda-label"><i class="fa fa-plus"></i> Add mass award</span></a>

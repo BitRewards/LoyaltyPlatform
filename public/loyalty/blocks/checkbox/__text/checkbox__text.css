@@ -1,0 +1,17 @@
+.checkbox {
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 6px;
+    @mixin undo-font-reset;
+    font-size: 11px;
+    line-height: 16px;
+    white-space: normal;
+    color: #2e404b;
+    user-select: none;
+
+    a {
+      font-family: var(--defaultFontSemiBold);
+    }
+  }
+}

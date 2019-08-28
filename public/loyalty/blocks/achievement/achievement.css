@@ -1,0 +1,16 @@
+.achievement {
+  position: relative;
+  width: 100%;
+  padding-top: 15px;
+  text-align: left;
+  color: var(--defaultColor);
+  border: 1px solid #dce4e9;
+  border-radius: 4px;
+  transition: border-color linear .3s;
+  cursor: pointer;
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: var(--brandColor);
+  }
+}

@@ -1,0 +1,14 @@
+.operation {
+  &__status_viewtype_accepted {
+    position: relative;
+    color: var(--brandColor);
+    background-color: transparent;
+    &:before {
+      content: "";
+      position: absolute 0;
+      background-color: var(--brandColor);
+      opacity: .1;
+      border-radius: 7px;
+    }
+  }
+}

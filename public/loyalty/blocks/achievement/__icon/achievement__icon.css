@@ -1,0 +1,9 @@
+.achievement {
+  &__icon {
+    position: absolute;
+    top: center;
+    left: center;
+    margin-top: 1px;
+    margin-left: 1px;
+  }
+}

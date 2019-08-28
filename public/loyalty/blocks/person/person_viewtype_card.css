@@ -1,0 +1,29 @@
+.person {
+  &_viewtype_card {
+    display: flex;
+    margin-bottom: 30px;
+    cursor: default;
+
+    @media (--mobile) {
+      flex-direction: column;
+    }
+
+    .person__avatar {
+      @media (--mobile) {
+        text-align: center;
+      }
+    }
+
+    .profile__desc {
+      flex-basis: 300px;
+      margin-left: 40px;
+
+      @media (--mobile) {
+        flex-basis: auto;
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+}

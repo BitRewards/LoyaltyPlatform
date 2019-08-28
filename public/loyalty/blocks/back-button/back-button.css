@@ -1,0 +1,35 @@
+.back-button {
+  position: absolute;
+  padding-left: 25px;
+  font-family: var(--defaultFontSemiBold);
+  font-size: 14px;
+  line-height: 1.15;
+  color: #2e404b;
+  cursor: pointer;
+  @media (--aboveMobile) {
+    top: 35px;
+    left: 40px;
+  }
+  .loyalty-popup__header & {
+    @media (--mobile) {
+      display: none;
+    }
+    @media (--aboveMobile) {
+      display: none;
+    }
+  }
+  &:hover {
+    .back-button__icon {
+      @media (--aboveMobile) {
+        transform: translate(-6px, -50%);
+      }
+    }
+  }
+  .loyalty-popup.is-menu-hide .loyalty-popup__header & {
+    @media (--mobile) {
+      top: center;
+      left: 20px;
+      display: block;
+    }
+  }
+}

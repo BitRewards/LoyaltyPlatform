@@ -1,0 +1,12 @@
+.horizontal-slider {
+  @mixin list-reset;
+  @mixin font-reset;
+  white-space: nowrap;
+  transition: transform linear .5s;
+
+  .modal_content_withdraw & {
+    &.is-next {
+      transform: translateX(-100%);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.dropdown {
+  &__content {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 12;
+    width: 224px;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(48, 53, 69, .12);
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s;
+
+    .dropdown.is-open & {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .dropdown_viewtype_top & {
+      top: auto;
+      bottom: 100%;
+
+      @media (--mobile) {
+        left: 0;
+      }
+    }
+  }
+}

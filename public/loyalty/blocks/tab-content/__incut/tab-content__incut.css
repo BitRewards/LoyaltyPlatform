@@ -1,0 +1,15 @@
+.tab-content {
+  &__incut {
+    margin-top: 60px;
+    padding: 15px 20px 15px 8px;
+    background-color: #fff6e5;
+    @media (--aboveMobile) {
+      display: none;
+    }
+    +.tab-content__body {
+      @media (--mobile) {
+        padding-top: 15px;
+      }
+    }
+  }
+}

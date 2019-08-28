@@ -1,0 +1,5 @@
+.popover {
+  &__list {
+    @mixin list-reset;
+  }
+}

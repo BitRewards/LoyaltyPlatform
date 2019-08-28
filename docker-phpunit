@@ -1,0 +1,3 @@
+#!/bin/sh
+PARAMS="$@"
+./docker-exec ./phpunit $PARAMS

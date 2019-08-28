@@ -1,0 +1,5 @@
+.load-image {
+  &__icon {
+    vertical-align: middle;
+  }
+}

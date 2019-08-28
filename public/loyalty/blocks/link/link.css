@@ -1,0 +1,5 @@
+.link {
+  outline: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}

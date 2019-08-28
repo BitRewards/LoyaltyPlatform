@@ -1,0 +1,6 @@
+.social-button {
+  &__icon_type_email {
+    width: 30px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,6 @@
+.tab-content {
+  &__incut-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

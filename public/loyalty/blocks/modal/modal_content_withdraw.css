@@ -1,0 +1,35 @@
+.modal {
+  &_content_withdraw {
+    @media (--mobile) {
+      width: 100%;
+      max-width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    @media (--tabletPortrait) {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    @media (--aboveTabletPortrait) {
+      max-width: 90.5%;
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .modal__title {
+      max-width: 564px;
+      margin: 0 auto 30px;
+    }
+
+    .modal__body {
+      overflow: hidden;
+    }
+
+    .withdraw-without-magic-number {
+      display: none;
+    }
+  }
+}

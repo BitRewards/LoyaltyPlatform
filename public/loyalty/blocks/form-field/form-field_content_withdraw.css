@@ -1,0 +1,5 @@
+.form-field {
+  &_content_withdraw {
+    max-width: 210px;
+  }
+}

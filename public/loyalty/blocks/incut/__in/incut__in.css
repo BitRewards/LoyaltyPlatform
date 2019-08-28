@@ -1,0 +1,10 @@
+.incut {
+  &__in {
+    position: relative;
+    margin: 0 auto;
+
+    .modal_content_withdraw & {
+      max-width: 564px;
+    }
+  }
+}

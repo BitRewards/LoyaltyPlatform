@@ -1,0 +1,18 @@
+.help {
+  position: absolute;
+  top: center;
+  right: 0;
+  padding-left: 20px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: .25;
+  cursor: pointer;
+  transition: opacity .3s;
+  &:hover {
+    opacity: 1;
+  }
+  &.is-active {
+    opacity: 1;
+  }
+}

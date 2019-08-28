@@ -1,0 +1,9 @@
+.tags {
+  &__input {
+    height: 100%;
+    font-size: 17px;
+    color: var(--defaultColor);
+    border: none;
+    background: transparent;
+  }
+}

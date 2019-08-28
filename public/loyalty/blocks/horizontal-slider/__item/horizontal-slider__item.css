@@ -1,0 +1,33 @@
+.horizontal-slider {
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    @mixin undo-font-reset;
+    white-space: normal;
+
+    .modal_content_withdraw & {
+      max-height: 0;
+      opacity: 0;
+      transition: all .4s;
+
+      &:first-child {
+        max-height: 100%;
+        opacity: 1;
+      }
+    }
+
+    .modal_content_withdraw .horizontal-slider.is-next & {
+      &:first-child {
+        max-height: 0;
+        opacity: 0;
+      }
+
+      &:last-child {
+        max-height: 100%;
+        opacity: 1;
+      }
+    }
+  }
+}

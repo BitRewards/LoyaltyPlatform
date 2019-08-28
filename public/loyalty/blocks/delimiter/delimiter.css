@@ -1,0 +1,12 @@
+.delimiter {
+  display: block;
+  font-family: var(--defaultFont);
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--defaultColor);
+  @media (--mobile) {
+    font-size: 15px;
+    line-height: 19px;
+  }
+}

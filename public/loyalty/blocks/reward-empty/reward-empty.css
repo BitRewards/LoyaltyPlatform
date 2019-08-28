@@ -1,0 +1,8 @@
+.reward-empty {
+  margin-top: 15px;
+  font-family: var(--defaultFont);
+  font-size: 18px;
+  line-height: 1.15;
+  text-align: center;
+  color: #a8a8a8;
+}

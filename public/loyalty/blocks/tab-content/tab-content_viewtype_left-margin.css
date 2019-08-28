@@ -1,0 +1,15 @@
+.tab-content {
+  &_viewtype_left-margin {
+    .tab-content__in {
+      padding-left: 100px;
+
+      @media (--mobile) {
+        padding-left: 20px;
+      }
+
+      @media (--tabletPortrait) {
+        padding-left: 20px;
+      }
+    }
+  }
+}

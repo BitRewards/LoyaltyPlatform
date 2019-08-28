@@ -1,0 +1,7 @@
+.form {
+  &_content_bind-acc {
+    @media (--mobile) {
+      padding-bottom: 30px;
+    }
+  }
+}

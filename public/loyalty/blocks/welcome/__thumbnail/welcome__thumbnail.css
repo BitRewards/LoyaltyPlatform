@@ -1,0 +1,9 @@
+.welcome {
+  &__thumbnail {
+    display: inline-block;
+    vertical-align: middle;
+    @mixin undo-font-reset;
+    margin-right: 15px;
+    white-space: normal;
+  }
+}

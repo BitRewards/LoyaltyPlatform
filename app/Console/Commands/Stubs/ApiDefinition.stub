@@ -1,0 +1,35 @@
+<?php
+
+namespace App\Services\Api\Definitions;
+
+class DummyClass implements ApiDefinitionInterface
+{
+    /**
+     * Get defintion name.
+     *
+     * @return string
+     */
+    public function name()
+    {
+        return '{DefinitionName}';
+    }
+
+    /**
+     * Get the array representation of defintion.
+     *
+     * @return array
+     */
+    public function toArray()
+    {
+        return [
+            'type' => 'object',
+            'properties' => [
+                'id' => ['type' => 'integer', 'format' => 'int32'],
+            ],
+            'required' => ['id'],
+            'example' => [
+                'id' => 1,
+            ],
+        ];
+    }
+}

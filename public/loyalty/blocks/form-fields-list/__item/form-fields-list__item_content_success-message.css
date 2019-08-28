@@ -1,0 +1,10 @@
+.form-fields-list {
+  &__item_content_success-message {
+    display: none;
+    text-align: center;
+
+    .form.is-success & {
+      display: block;
+    }
+  }
+}

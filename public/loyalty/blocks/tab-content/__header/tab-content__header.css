@@ -1,0 +1,19 @@
+.tab-content {
+  &__header {
+    position: relative;
+    z-index: 11;
+    margin-bottom: 30px;
+
+    .tab-content_content_create-password & {
+      margin-bottom: 15px;
+    }
+
+    .tab-content_content_dashboard & {
+      margin-bottom: 0;
+    }
+
+    @media (--mobile) {
+      margin-bottom: 15px;
+    }
+  }
+}

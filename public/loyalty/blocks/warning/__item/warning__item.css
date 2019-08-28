@@ -1,0 +1,5 @@
+.warning {
+  &__item {
+    margin-bottom: 15px;
+  }
+}

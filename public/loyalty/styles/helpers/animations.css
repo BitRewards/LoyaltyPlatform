@@ -1,0 +1,17 @@
+@keyframes load {
+  0% { background-position: 0 0; }
+  100% { background-position: 50px 50px; }
+}
+
+.is-flashed-on-update {
+  animation: flashed linear .5s backwards;
+}
+
+@keyframes flashed {
+  from {
+    opacity: .8;
+  }
+  to {
+    opacity: 0;
+  }
+}

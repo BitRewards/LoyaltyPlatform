@@ -1,0 +1,6 @@
+.operation {
+  &__status_viewtype_checked {
+    color: #2e404b;
+    background-color: rgba(204, 213, 218, .21);
+  }
+}

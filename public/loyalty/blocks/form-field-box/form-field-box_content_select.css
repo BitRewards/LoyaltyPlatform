@@ -1,0 +1,17 @@
+.form-field-box {
+  &_content_select {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 17px;
+      width: 8px;
+      height: 8px;
+      margin-top: -4px;
+      border-bottom: 1px solid #94979f;
+      border-right:  1px solid #94979f;
+      transform: rotate(45deg) translateY(-50%);
+      pointer-events: none;
+    }
+  }
+}

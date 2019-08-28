@@ -1,0 +1,12 @@
+.heading {
+  &_level_3 {
+    margin-bottom: 10px;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 20px;
+    color: #303545;
+
+    @media (--aboveTabletPortrait) {
+      font-size: 24px;
+    }
+  }
+}

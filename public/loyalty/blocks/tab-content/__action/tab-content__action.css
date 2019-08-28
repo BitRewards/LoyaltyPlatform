@@ -1,0 +1,13 @@
+.tab-content {
+  &__action {
+    @mixin list-reset;
+    max-width: 280px;
+    margin: 0 auto;
+
+    @media (--aboveTabletPortrait) {
+      display: flex;
+      justify-content: space-between;
+      max-width: 430px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.transaction {
+  &__status_viewtype_done {
+
+    &:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 12px;
+      height: 10px;
+      margin-right: 2px;
+      background-image: url('/loyalty/images/svg/ok.svg');
+    }
+  }
+}

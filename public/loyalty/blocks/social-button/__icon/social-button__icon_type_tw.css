@@ -1,0 +1,21 @@
+.social-button {
+  &__icon_type_tw {
+    width: 38px;
+    height: 29px;
+
+    @media (--mobile) {
+      width: 30px;
+      height: 23px;
+    }
+
+    .social-button.is-small & {
+      width: 20px;
+      height: 16px;
+
+      @media (--mobile) {
+        width: 20px;
+        height: 16px;
+      }
+    }
+  }
+}

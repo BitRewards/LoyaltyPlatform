@@ -1,0 +1,72 @@
+.i {
+  &_content_bold {
+    .i__text {
+      font-family: var(--defaultFontSemiBold);
+    }
+  }
+  &_content_points {
+    .i__text {
+      font-size: 20px;
+    }
+  }
+  &_content_breakline {
+    .i__text {
+      display: block;
+      @media (--mobile) {
+        display: inline;
+      }
+    }
+  }
+  &_content_mobile-hide {
+    @media (--mobile) {
+      position: absolute;
+      clip: rect(0px 0px 0px 0px);
+    }
+  }
+  &_content_mobile-no-display {
+    @media (--mobile) {
+      display: none;
+    }
+  }
+  &_content_brand {
+    .i__text {
+      color: var(--brandColor);
+    }
+  }
+  &_content_bit {
+    .i__text {
+      margin-left: 5px;
+      font-size: 18px;
+    }
+  }
+  &_content_fee {
+    .i__text {
+      color:  #de4a2c;
+    }
+  }
+  &_content_eth-address {
+    .i__text {
+      word-break: break-word;
+    }
+  }
+  &_content_balance {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1;
+    color: #2f404a;
+    opacity: .6;
+  }
+  &_content_currency {
+    .i__text {
+      font-family: var(--defaultFont);
+      font-size: 18px;
+      color: #8b8f9b;
+    }
+  }
+  &_content_referrer-balance {
+    .i__text {
+      margin-bottom: 5px;
+    }
+  }
+}

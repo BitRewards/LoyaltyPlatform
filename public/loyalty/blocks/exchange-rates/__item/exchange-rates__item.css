@@ -1,0 +1,7 @@
+.exchange-rates {
+  &__item {
+    display: inline-block;
+    margin-left: 37px;
+    @mixin undo-font-reset;
+  }
+}

@@ -1,0 +1,17 @@
+.tab-content {
+  &__in_content_balance {
+    @media (--mobile) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .tab-content__body {
+      @media (--mobile) {
+        margin-top: -15px;
+        padding-top: 20px;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

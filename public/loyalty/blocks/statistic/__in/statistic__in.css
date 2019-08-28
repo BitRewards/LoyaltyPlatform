@@ -1,0 +1,7 @@
+.statistic {
+  &__in {
+    &[v-cloak] {
+      display: none;
+    }
+  }
+}

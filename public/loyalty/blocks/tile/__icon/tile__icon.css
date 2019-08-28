@@ -1,0 +1,57 @@
+.tile {
+  &__icon {
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-width: 0;
+
+    &_content_cash-in {
+      width: 24px;
+      height: 23px;
+    }
+
+    &_content_cash-out {
+      width: 24px;
+      height: 24px;
+    }
+
+    &_content_bag {
+      width: 21px;
+      height: 25px;
+    }
+
+    &_content_check {
+      width: 22px;
+      height: 24px;
+    }
+
+    &_content_shopping-bag {
+      width: 20px;
+      height: 22px;
+    }
+
+    &_content_customers {
+      width: 24px;
+      height: 20px;
+    }
+
+    &_content_referrals {
+      width: 24px;
+      height: 20px;
+    }
+
+    &_content_corner-up {
+      width: 18px;
+      height: 18px;
+    }
+
+    &_content_transition {
+      width: 20px;
+      height: 20px;
+    }
+
+    &_content_link {
+      width: 22px;
+      height: 24px;
+    }
+  }
+}

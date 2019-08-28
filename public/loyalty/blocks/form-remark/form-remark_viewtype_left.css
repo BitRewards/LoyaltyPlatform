@@ -1,0 +1,5 @@
+.form-remark {
+  &_viewtype_left {
+    text-align: left;
+  }
+}

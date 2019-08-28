@@ -1,0 +1,11 @@
+.table {
+  &__heading {
+    padding: 10px;
+    font-size: 12px;
+    font-family: var(--defaultFontSemiBold);
+    text-align: left;
+    text-transform: uppercase;
+    border-top: 1px solid #eaeaec;
+    border-bottom: 1px solid #eaeaec;
+  }
+}

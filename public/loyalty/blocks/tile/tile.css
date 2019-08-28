@@ -1,0 +1,31 @@
+.tile {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  margin-right: 12px;
+  padding: 18px;
+  background-color: rgba(48, 53, 69, .03);
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  &.is-important {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: var(--brandColor);
+      border-radius: 8px;
+      pointer-events: none;
+      opacity: .10;
+    }
+  }
+
+  @media (--mobile) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}

@@ -1,0 +1,6 @@
+.button {
+  &_content_how {
+    margin-top: 3px;
+    font-size: 16px;
+  }
+}

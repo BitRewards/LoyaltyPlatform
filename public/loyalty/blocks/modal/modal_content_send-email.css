@@ -1,0 +1,8 @@
+.modal {
+  &_content_send-email {
+    height: auto;
+    .modal__body {
+      padding-top: 15px;
+    }
+  }
+}

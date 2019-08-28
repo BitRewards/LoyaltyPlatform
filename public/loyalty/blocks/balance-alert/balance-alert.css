@@ -1,0 +1,66 @@
+.balance-alert {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  line-height: 1;
+  transform: translateY(-50%);
+  &:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    size: 25px 22px;
+    background-color: #fff;
+    border-radius: 2px;
+    opacity: .3;
+  }
+  &:after {
+    content: "";
+    position: absolute 0;
+    bottom: 2px;
+    box-shadow: 0 10px 13px rgba(0, 0, 0, .11);
+  }
+  &.is-animate {
+    &:before {
+      animation: grow 2s linear infinite;
+    }
+    &:after {
+      top: auto;
+      bottom: -3px;
+      left: -1px;
+      right: -1px;
+      z-index: -1;
+      height: 27px;
+      background-color: rgba(0, 0, 0, .05);
+      border-radius: 7px;
+      box-shadow: none;
+      animation: growShadow 2s linear infinite both;
+    }
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+    opacity: .3;
+  }
+  30% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+  31%, to {
+    transform: scale(1)
+  }
+}
+
+@keyframes growShadow {
+  from {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  21%, to {
+    transform: scale(1);
+  }
+}

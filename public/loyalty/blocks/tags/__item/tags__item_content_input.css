@@ -1,0 +1,6 @@
+.tags {
+  &__item_content_input {
+    padding: 0;
+    background: none;
+  }
+}

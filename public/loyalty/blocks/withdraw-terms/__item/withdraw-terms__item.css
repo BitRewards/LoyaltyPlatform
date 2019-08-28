@@ -1,0 +1,18 @@
+.withdraw-terms {
+  &__item {
+    @media (--aboveMobile) {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    + .withdraw-terms__item {
+      @media (--mobile) {
+        margin-top: 10px;
+      }
+
+      @media (--aboveMobile) {
+        margin-left: 15px;
+      }
+    }
+  }
+}

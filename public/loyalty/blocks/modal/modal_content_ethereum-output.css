@@ -1,0 +1,29 @@
+.modal {
+  &_content_ethereum-output {
+    @media (--mobile) {
+      width: 100%;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    @media (--aboveMobile) {
+      max-width: 720px;
+      width: 100%;
+    }
+
+    .modal__title {
+      max-width: 330px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+    .modal__body {
+      max-width: 480px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+    .g-recaptcha {
+      display: inline-block;
+    }
+  }
+}

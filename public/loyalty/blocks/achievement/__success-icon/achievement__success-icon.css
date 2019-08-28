@@ -1,0 +1,6 @@
+.achievement {
+  &__success-icon {
+    size: 14px 10px;
+    fill: currentColor;
+  }
+}

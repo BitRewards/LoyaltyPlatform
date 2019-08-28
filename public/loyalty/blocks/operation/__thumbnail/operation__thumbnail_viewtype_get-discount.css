@@ -1,0 +1,5 @@
+.operation {
+  &__thumbnail_viewtype_get-discount {
+    background-color: transparent;
+  }
+}

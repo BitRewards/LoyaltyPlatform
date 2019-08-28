@@ -1,0 +1,5 @@
+.form {
+  &_content_auth {
+    text-align: center;
+  }
+}

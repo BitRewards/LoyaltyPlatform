@@ -1,0 +1,9 @@
+.offers-list {
+  @mixin list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media (--aboveMobile) {
+    justify-content: space-between;
+  }
+}

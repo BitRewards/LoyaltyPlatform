@@ -1,0 +1,6 @@
+.transaction {
+  &__status {
+    font-family: var(--defaultFontSemiBold);
+    font-size: 15px;
+  }
+}

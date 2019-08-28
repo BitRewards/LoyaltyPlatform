@@ -1,0 +1,37 @@
+.form-field {
+  &_type_text {
+    width: 100%;
+    height: 48px;
+    padding: * 12px;
+    font-family: var(--defaultFont);
+    font-size: 17px;
+    color: var(--defaultColor);
+    text-overflow: ellipsis;
+    background: #fff;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color linear .3s, background-color linear .3s;
+    &::placeholder {
+      font-family: var(--defaultFontItalic);
+      font-size: 17px;
+      color: var(--defaultColor);
+      opacity: .5;
+    }
+    &:focus {
+      border-color: var(--brandColor);
+    }
+    &.is-error,
+    &[aria-invalid="true"] {
+      background-color: var(--inputErrorBg);
+      border-color: #f2ae9d;
+    }
+    &:disabled {
+      color: rgba(47, 64, 74, .6);
+      background-color: rgba(48, 53, 69, .04);
+    }
+    &.is-small {
+      height: 40px;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.tile {
+  &__title {
+    font-size: 14px;
+    color: #303545;
+  }
+}

@@ -1,0 +1,33 @@
+.btn-small {
+  font-size: 10px;
+  margin-right: 0.5rem;
+  padding: 0 8px;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+.btn-loading {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.custom-card {
+  padding: 20px;
+}
+
+.custom-card-header {
+  margin: 20px auto;
+}
+
+.item-suffix {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.increased-value .metric-value:before {
+  content: "\2191";
+  color: #21b978;
+}
+

@@ -1,0 +1,29 @@
+.offer {
+  &__status_viewtype_get {
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    padding-top: 0;
+    line-height: 40px;
+    background-color: var(--brandColor);
+    transition: background-color linear .3s;
+    &:before {
+      content: none;
+    }
+    .offer.is-used & {
+      background-color: #d2d9dd;
+    }
+    .offer:hover &,
+    .offer:focus & {
+      background-color: #ffb03f;
+    }
+    .offer:active & {
+      background-color: #e59625;
+    }
+    .offer.is-used:hover &,
+    .offer.is-used:focus &,
+    .offer.is-used:active & {
+      background-color: #d2d9dd;
+    }
+  }
+}

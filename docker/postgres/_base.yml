@@ -1,0 +1,12 @@
+version: '2'
+services:
+  db:
+    image: postgres:9.6
+    volumes:
+      - ./:/var/www/crm
+      - ~/crmdb-data:/data
+    environment:
+      POSTGRES_USER: crm_user
+      POSTGRES_PASSWORD: none
+      POSTGRES_DB: crm
+      PGDATA: /data

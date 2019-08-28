@@ -1,0 +1,16 @@
+.welcome {
+  &__login {
+    font-family: var(--defaultFontSemiBold);
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    border-bottom: 1px dotted currentColor;
+    cursor: pointer;
+    transition: border-bottom-color linear .3s;
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.field-composition {
+  &_content_language {
+    .field-composition {
+      &__title {
+        margin-bottom: 5px;
+      }
+
+      &__content {
+        max-width: 220px;
+      }
+    }
+  }
+}

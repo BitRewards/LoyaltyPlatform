@@ -1,0 +1,10 @@
+.scroller {
+  height: 100%;
+  padding-right: 20px;
+  overflow: auto;
+  box-sizing: border-box;
+
+  @media (--mobile) {
+    padding-right: 0;
+  }
+}

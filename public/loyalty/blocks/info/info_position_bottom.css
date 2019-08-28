@@ -1,0 +1,28 @@
+.info {
+  &_position_bottom {
+    &:after {
+      top: 100%;
+      bottom: auto;
+      margin-top: 5px;
+      margin-bottom: 0;
+
+      @media (min-width: 767px) and (max-width: 1100px) {
+        left: 50%;
+        transform: translate3d(-50%, 10%, 0);
+      }
+    }
+
+    &:hover {
+      &:after {
+
+        @media (min-width: 767px) and (max-width: 1100px) {
+          transform: translate3d(-50%, 0, 0);
+        }
+
+        @media (--mobile) {
+          transform: translate3d(-50%, 20%, 0);
+        }
+      }
+    }
+  }
+}

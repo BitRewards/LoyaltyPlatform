@@ -1,0 +1,20 @@
+.form {
+  &_content_instagram-post {
+    max-width: 580px;
+    margin: 0 auto;
+
+    .field-composition {
+      &__title {
+        margin-bottom: 5px;
+      }
+    }
+
+    .form-fields-list {
+      &__item {
+        &_content_submit {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}

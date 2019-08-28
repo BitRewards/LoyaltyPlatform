@@ -1,0 +1,12 @@
+.form-field {
+  &_content_share-link {
+    padding-right: 50px;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 22px;
+    color: var(--defaultColor);
+    text-align: center;
+    background-color: #fafafa;
+    border-color: #f0f0f0;
+    user-select: all;
+  }
+}

@@ -1,0 +1,29 @@
+.list {
+  &_content_reward {
+    .list__item {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute 0;
+        top: -1px;
+        right: 0;
+        left: 0;
+        bottom: -1px;
+        border: 1px solid var(--brandColor);
+        border-left: none;
+        border-right: none;
+        opacity: .3;
+        pointer-events: none;
+      }
+      &.is-new {
+        &:after {
+          content: "";
+          position: absolute 0;
+          background-color: var(--brandColor);
+          opacity: .05;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}

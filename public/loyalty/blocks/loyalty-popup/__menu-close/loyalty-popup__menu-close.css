@@ -1,0 +1,20 @@
+.loyalty-popup {
+  &__menu-close {
+    position: absolute;
+    top: center;
+    right: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity linear .3s;
+    pointer-events: none;
+    -webkit-tap-highlight-color: transparent;
+    @media (--aboveMobile) {
+      display: none;
+    }
+    .loyalty-popup__header.is-open-sidemenu & {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}

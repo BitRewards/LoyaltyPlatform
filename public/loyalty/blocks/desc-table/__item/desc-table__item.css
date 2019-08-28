@@ -1,0 +1,13 @@
+.desc-table {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 100%;
+    margin-top: 20px;
+
+    @media (--aboveTabletPortrait) {
+      flex-basis: 50%;
+    }
+  }
+}

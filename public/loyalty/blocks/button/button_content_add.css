@@ -1,0 +1,20 @@
+.button {
+  &_content_add {
+    max-width: 220px;
+    width: 100%;
+
+    .button__text {
+      vertical-align: middle;
+      font-family: var(--defaultFontSemiBold);
+      font-size: 16px;
+    }
+
+    .button__icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 3px;
+      vertical-align: middle;
+      fill: #fff;
+    }
+  }
+}

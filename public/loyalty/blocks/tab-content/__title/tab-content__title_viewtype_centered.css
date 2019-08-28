@@ -1,0 +1,5 @@
+.tab-content {
+  &__title_viewtype_centered {
+    text-align: center;
+  }
+}

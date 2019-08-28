@@ -1,0 +1,10 @@
+.tab-content {
+  &__action-item {
+    margin-bottom: 10px;
+
+    @media (--aboveTabletPortrait) {
+      flex-basis: 200px;
+      margin-bottom: 0;
+    }
+  }
+}

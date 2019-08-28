@@ -1,0 +1,10 @@
+.welcome {
+  &__logout-icon {
+    position: absolute;
+    top: center;
+    left: 0;
+    size: 6px 9px;
+    fill: currentcolor;
+    transition: transform linear .3s;
+  }
+}

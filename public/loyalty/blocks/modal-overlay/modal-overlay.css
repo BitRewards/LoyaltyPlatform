@@ -1,0 +1,13 @@
+.modal-overlay {
+  position: absolute 0;
+  z-index: -1;
+  pointer-events: none;
+  transition: opacity linear .2s;
+  opacity: 0;
+  &.is-active {
+    z-index: 15;
+    overflow: auto;
+    opacity: 1;
+    pointer-events: all;
+  }
+}

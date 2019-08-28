@@ -1,0 +1,5 @@
+.menu {
+  &__item {
+    display: block;
+  }
+}

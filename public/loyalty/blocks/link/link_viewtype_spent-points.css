@@ -1,0 +1,12 @@
+.link {
+  &_viewtype_spent-points {
+    font-family: var(--defaultFontSemiBold);
+    border-bottom: 1px dotted var(--defaultColor);
+    transition: border-bottom-color linear .3s;
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom-color: transparent;
+    }
+  }
+}

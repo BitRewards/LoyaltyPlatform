@@ -1,0 +1,30 @@
+.form-field {
+  &_type_textarea {
+    display: block;
+    width: 100%;
+    height: 125px;
+    padding: 12px;
+    font-family: var(--defaultFont);
+    font-size: 17px;
+    color: var(--defaultColor);
+    background: #fff;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color linear .3s, background-color linear .3s;
+    resize: none;
+    &::placeholder {
+      font-family: var(--defaultFontItalic);
+      font-size: 17px;
+      color: var(--defaultColor);
+      opacity: .5;
+    }
+    &:focus {
+      border-color: var(--brandColor);
+    }
+    &.is-error {
+      background-color: var(--inputErrorBg);;
+      border-color: #f2ae9d;
+    }
+  }
+}

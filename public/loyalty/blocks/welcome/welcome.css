@@ -1,0 +1,4 @@
+.welcome {
+  @mixin font-reset;
+  white-space: nowrap;
+}

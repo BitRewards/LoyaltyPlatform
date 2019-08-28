@@ -1,0 +1,11 @@
+.social-button {
+  &_type_vk {
+    background-color: #4d75a3;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #5f83ac;
+    }
+  }
+}

@@ -1,0 +1,4 @@
+.content-column {
+  display: inline-block;
+  @mixin undo-font-reset;
+}

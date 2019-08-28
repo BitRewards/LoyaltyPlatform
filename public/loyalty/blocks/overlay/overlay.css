@@ -1,0 +1,30 @@
+.overlay {
+  display: block;
+  position: fixed 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #f1f6ff;
+  opacity: 0;
+  transition: opacity linear .15s, z-index linear .15s;
+  -webkit-tap-highlight-color: transparent;
+  &.is-active {
+    opacity: 1;
+    z-index: 1111;
+  }
+  &:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: -5000px;
+    left: 0;
+  }
+  .is-animation-disabled & {
+    opacity: 1;
+    z-index: 1111;
+    transition-duration: 0s, 0s;
+    transition-delay: 0s, 0s;
+  }
+}

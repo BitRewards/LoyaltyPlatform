@@ -1,0 +1,10 @@
+.modal {
+  &_content_ask-questions {
+    .modal__body {
+      overflow: hidden;
+    }
+    .horizontal-slider {
+      height: 300px;
+    }
+  }
+}

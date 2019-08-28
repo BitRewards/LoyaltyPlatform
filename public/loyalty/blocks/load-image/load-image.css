@@ -1,0 +1,16 @@
+.load-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 15px;
+  font-family: var(--defaultFontSemiBold);
+  font-size: 16px;
+  white-space: nowrap;
+  text-align: center;
+  text-overflow: ellipsis;
+  color: #303545;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}

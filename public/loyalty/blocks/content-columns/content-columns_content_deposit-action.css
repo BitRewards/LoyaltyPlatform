@@ -1,0 +1,22 @@
+.content-columns {
+  &_content_deposit-action {
+    margin-top: 20px;
+    margin-bottom: 65px;
+
+    @media (--aboveTabletPortrait) {
+      display: flex;
+      margin-left: -20px;
+    }
+
+    >.content-column {
+      width: 100%;
+      margin-bottom: 10px;
+
+      @media (--aboveTabletPortrait) {
+        flex-grow: 1;
+        margin-left: 20px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

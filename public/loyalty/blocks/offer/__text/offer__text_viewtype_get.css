@@ -1,0 +1,10 @@
+.offer {
+  &__text_viewtype_get {
+    position: absolute;
+    top: center;
+    left: center;
+    opacity: 0;
+    transition: opacity linear .3s;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,18 @@
+.tip {
+  position: relative;
+  margin-bottom: 18px;
+  padding: 14px 40px 14px 20px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--brandColor);
+    opacity: .1;
+    border-radius: 4px;
+    pointer-events: none;
+  }
+}

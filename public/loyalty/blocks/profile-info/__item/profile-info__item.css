@@ -1,0 +1,6 @@
+.profile-info {
+  &__item {
+    flex-basis: 50%;
+    margin-bottom: 15px;
+  }
+}

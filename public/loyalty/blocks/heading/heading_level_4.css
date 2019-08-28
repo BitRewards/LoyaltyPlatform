@@ -1,0 +1,9 @@
+.heading {
+  &_level_4 {
+    margin-bottom: 15px;
+    font-family: var(--defaultFont);
+    font-size: 18px;
+    line-height: 1;
+    color: var(--defaultColor);
+  }
+}

@@ -1,0 +1,52 @@
+.dropzone {
+  position: relative;
+  padding: 9px!important;
+  min-height: 94px!important;
+  background-color: #f4f5f6!important;
+  border: none!important;
+  box-sizing: border-box!important;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    bottom: 9px;
+    left: 9px;
+    border: 1px dashed #92959d;
+    pointer-events: none;
+  }
+
+  .dz-default.dz-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    margin: 0!important;
+    font-family: var(--defaultFont);
+    font-size: 16px;
+    color: #303545;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+
+    @media (--mobile) {
+      padding: 20px;
+    }
+  
+    @media (--tabletPortrait) {
+      padding: 20px;
+    }
+  }
+
+  .material-icons {
+    display: none!important;
+  }
+  
+  .dz-filename {
+    vertical-align: middle;
+  }
+
+  .dz-error-message {
+    color: #f2ae9d;
+  }
+}

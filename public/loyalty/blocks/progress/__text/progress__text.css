@@ -1,0 +1,13 @@
+.progress {
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 18px;
+    white-space: nowrap;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    transition: background-size .3s;
+  }
+}

@@ -1,0 +1,10 @@
+.link {
+  &_viewtype_pseudo {
+    border-bottom: 1px solid currentColor;
+    transition: color .3s, border-bottom-color .3s;
+
+    &:hover {
+      color: var(--brandColor);
+    }
+  }
+}

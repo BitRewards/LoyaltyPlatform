@@ -1,0 +1,13 @@
+.horizontal-slider {
+  &_content_confirm-email {
+    .horizontal-slider__item_content_bind {
+      display: none;
+    }
+
+    &.is-full {
+      .horizontal-slider__item_content_bind {
+        display: inline-block;
+      }
+    }
+  }
+}

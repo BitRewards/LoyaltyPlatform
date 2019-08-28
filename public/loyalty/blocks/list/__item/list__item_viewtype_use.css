@@ -1,0 +1,25 @@
+.list {
+  &__item_viewtype_use {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute 0;
+      top: -1px;
+      right: 0;
+      left: 0;
+      bottom: -1px;
+      border: 1px solid var(--brandColor);
+      border-left: none;
+      border-right: none;
+      opacity: .3;
+      pointer-events: none;
+    }
+    &:after {
+      content: "";
+      position: absolute 0;
+      background-color: var(--brandColor);
+      opacity: .03;
+      pointer-events: none;
+    }
+  }
+}

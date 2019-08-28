@@ -1,0 +1,11 @@
+.operation {
+  &__title {
+    font-size: 15px;
+    line-height: 19px;
+    word-break: break-word;
+    b,
+    strong {
+      font-family: var(--defaultFontSemiBold);
+    }
+  }
+}

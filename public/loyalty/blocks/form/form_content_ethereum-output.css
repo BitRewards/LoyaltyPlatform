@@ -1,0 +1,11 @@
+.form {
+  &_content_ethereum-output {
+    .form-field_type_text {
+      text-align: center;
+    }
+    .form-fields-list__item_content_submit {
+      max-width: 280px;
+      margin: 0 auto;
+    }
+  }
+}

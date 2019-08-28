@@ -1,0 +1,7 @@
+.form {
+  &_content_confirm {
+    max-width: 530px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

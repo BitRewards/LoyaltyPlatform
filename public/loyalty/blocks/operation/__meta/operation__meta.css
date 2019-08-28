@@ -1,0 +1,17 @@
+.operation {
+  &__meta {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    opacity: .6;
+
+    @media (--mobile) {
+      margin-bottom: 5px;
+    }
+
+    @media (--tabletPortrait) {
+      margin-bottom: 5px;
+    }
+  }
+}

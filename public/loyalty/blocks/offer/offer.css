@@ -1,0 +1,26 @@
+.offer {
+  position: relative;
+  width: 100%;
+  padding-top: 35px;
+  overflow: hidden;
+  color: var(--defaultColor);
+  text-align: center;
+  border: 1px solid #dce4e9;
+  border-radius: 4px;
+  transition: border-color linear .3s;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: var(--brandColor);
+  }
+
+  &.is-used {
+    color: #7e8a91;
+    background-color: #f6f8f9;
+    border: 1px solid #dce4e9;
+    cursor: default;
+  }
+}

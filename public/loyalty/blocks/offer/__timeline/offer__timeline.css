@@ -1,0 +1,12 @@
+.offer {
+  &__timeline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: var(--brandColor);
+    transform: translateX(-100%);
+    transition: transform ease-in-out 2s;
+  }
+}

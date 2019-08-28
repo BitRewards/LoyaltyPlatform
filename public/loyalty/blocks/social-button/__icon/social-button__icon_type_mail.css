@@ -1,0 +1,15 @@
+.social-button {
+  &__icon_type_mail {
+    fill: #3e4856;
+
+    .social-button.is-small & {
+      width: 22px;
+      height: 22px;
+
+      @media (--mobile) {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}

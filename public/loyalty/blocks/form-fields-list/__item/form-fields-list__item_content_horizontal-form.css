@@ -1,0 +1,5 @@
+.form-fields-list {
+  &__item_content_horizontal-form {
+    margin-bottom: 10px;
+  }
+}

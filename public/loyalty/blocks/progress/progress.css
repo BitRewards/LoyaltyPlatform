@@ -1,0 +1,12 @@
+.progress {
+  display: flex;
+  align-items: center;
+
+  @media (--mobile) {
+    display: block;
+  }
+
+  @media (--tabletPortrait) {
+    display: block;
+  }
+}

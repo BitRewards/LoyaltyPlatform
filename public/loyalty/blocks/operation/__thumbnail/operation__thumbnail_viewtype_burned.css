@@ -1,0 +1,5 @@
+.operation {
+  &__thumbnail_viewtype_burned {
+    background-color: #cfcfcf!important;
+  }
+}

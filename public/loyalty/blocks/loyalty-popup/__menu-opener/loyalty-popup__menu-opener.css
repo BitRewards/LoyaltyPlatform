@@ -1,0 +1,28 @@
+.loyalty-popup {
+  &__menu-opener {
+    position: absolute;
+    top: center;
+    left: 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    @media (--aboveMobile) {
+      display: none;
+    }
+    &.has-alert {
+      &:after {
+        content: "";
+        position: absolute;
+        top: -4px;
+        right: -8px;
+        size: 12px;
+        background-color: var(--brandColor);
+        border-radius: 50%;
+        border: 2px solid #fff;
+        pointer-events: none;
+      }
+    }
+    .loyalty-popup.is-menu-hide & {
+      display: none;
+    }
+  }
+}

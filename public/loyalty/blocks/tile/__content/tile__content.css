@@ -1,0 +1,16 @@
+.tile {
+  &__content {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 24px;
+    color: #303545;
+
+    .tile.is-important &,
+    .tile.is-important & .i__text {
+      color: var(--brandColor);
+    }
+  }
+}

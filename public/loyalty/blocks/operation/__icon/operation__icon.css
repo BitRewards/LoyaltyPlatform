@@ -1,0 +1,8 @@
+.operation {
+  &__icon {
+    position: absolute;
+    top: center;
+    left: center;
+    margin-left: 1px;
+  }
+}

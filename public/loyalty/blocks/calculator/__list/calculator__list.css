@@ -1,0 +1,14 @@
+.calculator {
+  &__list {
+    @mixin list-reset;
+    margin-bottom: 10px;
+    padding: 20px 10px;
+    border-top: 2px solid #d6d7da;
+    border-bottom: 2px solid #d6d7da;
+
+    @media (--mobile) {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.loader {
+  &__text {
+    font-family: var(--defaultFontSemiBold);
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #454a56;
+  }
+}

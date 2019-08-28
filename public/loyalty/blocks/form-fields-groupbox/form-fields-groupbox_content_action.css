@@ -1,0 +1,27 @@
+.form-fields-groupbox {
+  &_content_action {
+    .form-fields-groupbox__section {
+      width: 208px;
+
+      @media (--mobile) {
+        display: block;
+        margin-bottom: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @media (--tabletPortrait) {
+        display: block;
+        margin-bottom: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

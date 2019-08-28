@@ -1,0 +1,8 @@
+.calculator {
+  &__key {
+    position: relative;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 14px;
+    background-color: #fff;
+  }
+}

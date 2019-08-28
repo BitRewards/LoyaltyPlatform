@@ -1,0 +1,10 @@
+actor: FunctionalTester
+modules:
+    enabled:
+        - Laravel5
+        - Asserts
+        - \Helper\LaravelExtra
+        - \Helper\Functional
+
+        - REST:
+            depends: Laravel5

@@ -1,0 +1,39 @@
+.how-it-work {
+  &__item {
+    flex-basis: 220px;
+    flex-grow: 0;
+    min-width: 0;
+    margin-top: 20px;
+
+    @media (--mobile) {
+      margin-top: 40px;
+    }
+
+    @media (--tabletPortrait) {
+      margin-top: 40px;
+    }
+
+    &:first-child {
+      @media (--mobile) {
+        margin-top: 0;
+      }
+
+      @media (--tabletPortrait) {
+        margin-top: 0;
+      }
+    }
+
+    &_content_arrow {
+      flex-basis: 20px;
+      text-align: center;
+
+      @media (--mobile) {
+        display: none;
+      }
+
+      @media (--tabletPortrait) {
+        display: none;
+      }
+    }
+  }
+}

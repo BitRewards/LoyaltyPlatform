@@ -1,0 +1,12 @@
+.person {
+  &__name {
+    display: block;
+    overflow: hidden;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

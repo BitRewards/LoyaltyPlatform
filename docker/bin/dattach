@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+containers=($(docker ps --format '{{.Names}}' | sort));
+
+select container in "${containers[@]}"; do
+  [ -z "$container" ] || docker exec -it $container /bin/bash;
+break; done;

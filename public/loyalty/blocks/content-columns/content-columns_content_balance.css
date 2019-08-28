@@ -1,0 +1,27 @@
+.content-columns {
+  &_content_balance {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+
+    @media (--aboveMobile) {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    >.content-column {
+      &_layout_a {
+        flex-basis: 56%;
+        flex-shrink: 0;
+      }
+
+      &_layout_b {
+        margin-bottom: 30px;
+
+        @media (--aboveMobile) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

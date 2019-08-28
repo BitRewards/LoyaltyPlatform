@@ -1,0 +1,89 @@
+.icon {
+  &_content_buy {
+    size: 32px 40px;
+    background-image: url("buy@2x.png#icons-common");
+  }
+  &_content_visit {
+    size: 38px 42px;
+    background-image: url("visit@2x.png#icons-common");
+  }
+  &_content_sign-up {
+    size: 34px 36px;
+    background-image: url("sign-up@2x.png#icons-common");
+  }
+  &_content_friend-buy {
+    size: 40px 42px;
+    background-image: url("friend-buy@2x.png#icons-common");
+  }
+  &_content_share {
+    size: 34px 38px;
+    background-image: url("share@2x.png#icons-common");
+  }
+  &_content_email {
+    size: 40px 36px;
+    background-image: url("email@2x.png#icons-common");
+  }
+  &_content_review {
+    size: 38px 36px;
+    background-image: url("review@2x.png#icons-common");
+  }
+  &_content_card {
+    size: 42px 34px;
+    background-image: url("card@2x.png#icons-common");
+  }
+  &_content_gift,
+  &_content_custom-social {
+    size: 34px 38px;
+    background-image: url("gift@2x.png#icons-common");
+  }
+  &_content_join-fb {
+    size: 30px;
+    background-image: url("join-fb@2x.png#icons-common");
+  }
+  &_content_join-vk {
+    size: 40px 24px;
+    margin-top: 2px;
+    background-image: url("join-vk@2x.png#icons-common");
+  }
+  &_content_share-fb {
+    size: 46px 42px;
+    margin-top: 3px;
+    background-image: url("share-fb@2x.png#icons-common");
+  }
+  &_content_share-vk {
+    size: 46px 42px;
+    margin-top: 3px;
+    background-image: url("share-vk@2x.png#icons-common");
+  }
+  &_content_promocode {
+    size: 48px 26px;
+    background-image: url("promocode@2x.png#icons-common");
+  }
+  &_content_loyalty-card {
+    size: 40px 34px;
+    background-image: url("loyalty-card@2x.png#icons-common");
+  }
+  &_content_multiacc {
+    size: 50px 34px;
+    margin-top: 1px;
+    margin-left: 2px;
+    background-image: url("multiacc@2x.png#icons-common");
+  }
+  &_content_svg {
+    size: 60px;
+    fill: var(--brandColor);
+  }
+  &_content_instagram,
+  &_content_share-instagram {
+    width: 46px;
+    height: 42px;
+    margin-top: 3px;
+    background: svg-load(post-inst.svg, width: 46px, height: 42px);
+  }
+  &_content_telegram,
+  &_content_subscribe-telegram {
+    width: 38px;
+    height: 35px;
+    background: svg-load(telegram.svg, width: 38px, height: 35px);
+  }
+}

@@ -1,0 +1,9 @@
+.tab-content {
+  &__in_content_invite {
+    &.tab-content__in_viewtype_scroll {
+      @media (--mobile) {
+        padding-top: 75px;
+      }
+    }
+  }
+}

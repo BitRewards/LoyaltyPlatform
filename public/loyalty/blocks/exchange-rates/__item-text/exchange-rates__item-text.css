@@ -1,0 +1,9 @@
+.exchange-rates {
+  &__item-text {
+    padding: 7px;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 18px;
+    background-color: rgba(48, 54, 69, .04);
+    border-radius: 2px;
+  }
+}

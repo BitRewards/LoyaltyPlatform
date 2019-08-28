@@ -1,0 +1,27 @@
+.popup {
+  margin: 0 auto;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform linear .3s, opacity linear .3s, visibility linear .3s;
+  @media (--aboveMobile) {
+    transform: scale(.5) translateZ(0);
+  }
+  &.is-active {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    @media (--aboveMobile) {
+      transform: scale(1) translateZ(0);
+    }
+  }
+  .is-animation-disabled & {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transition-duration: 0s, 0s, 0s;
+    @media (--aboveMobile) {
+      transform: scale(1) translateZ(0);
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.form-remark {
+  &_viewtype_small {
+    font-size: 14px;
+    text-align: left;
+  }
+}

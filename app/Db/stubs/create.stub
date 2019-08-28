@@ -1,0 +1,29 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class DummyClass extends Migration
+{
+    public function up()
+    {
+        DB::beginTransaction();
+
+        \Schema::create('DummyTable', function (Blueprint $table) {
+            $table->increments('id');
+            $table->timestamps();
+        });
+
+        DB::commit();
+    }
+
+    public function down()
+    {
+        DB::beginTransaction();
+
+        \Schema::drop('DummyTable');
+
+        DB::commit();
+    }
+}

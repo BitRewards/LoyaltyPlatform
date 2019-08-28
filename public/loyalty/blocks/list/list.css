@@ -1,0 +1,6 @@
+.list {
+  @mixin list-reset;
+  @media (--mobile) {
+    margin-top: 20px;
+  }
+}

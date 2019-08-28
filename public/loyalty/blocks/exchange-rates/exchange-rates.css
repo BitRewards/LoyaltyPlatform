@@ -1,0 +1,5 @@
+.exchange-rates {
+  @mixin list-reset;
+  @mixin font-reset;
+  margin-left: -37px;
+}

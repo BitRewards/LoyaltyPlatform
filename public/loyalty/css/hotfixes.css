@@ -1,0 +1,66 @@
+.jscroll-next {
+    
+  display: none;
+}
+
+.operation__status_viewtype_rejected {
+    background-color: #d9534f;
+}
+
+.hotfix-reward-history-row {
+  cursor: pointer;
+}
+
+.is-giftd-blinking {
+  -moz-animation: giftd-blink 0.7s linear infinite 0s !important;
+  -ms-animation: giftd-blink 0.7s linear infinite   0s !important;
+  -o-animation: giftd-blink 0.7s linear infinite 0s !important;
+  -webkit-animation: giftd-blink 0.7s linear infinite  0s !important;
+  animation: giftd-blink 0.7s linear infinite 0s !important;
+}
+
+@-moz-keyframes giftd-blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes giftd-blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes giftd-blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1.0; }
+}
+
+body {
+  background: transparent;
+}
+
+.overlay {
+  background-color: transparent;;
+}
+
+.is-not-in-iframe .overlay {
+  background-color: rgba(241, 246, 255, 0.9);
+}
+
+.sidemenu__incut {
+  cursor: pointer;
+}
+
+.modal_content_send-email .modal__body {
+  overflow: hidden;
+}
+
+.offer__title.is-smaller {
+  font-size: 2.0rem;
+}
+
+.menu__item-link {
+  padding-right: 38px;
+}

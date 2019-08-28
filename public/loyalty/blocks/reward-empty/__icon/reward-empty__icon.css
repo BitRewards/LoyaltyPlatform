@@ -1,0 +1,11 @@
+.reward-empty {
+  &__icon {
+    display: block;
+    size: 120px;
+    margin: 0 auto 15px;
+    fill: #f5f5f5;
+    @media (--aboveMobile) {
+      size: 260px;
+    }
+  }
+}

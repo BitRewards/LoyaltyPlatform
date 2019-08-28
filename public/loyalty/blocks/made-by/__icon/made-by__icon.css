@@ -1,0 +1,8 @@
+.made-by {
+  &__icon {
+    size: 62px 16px;
+    fill: #fff;
+    opacity: .3;
+    transition: opacity linear .3s;
+  }
+}

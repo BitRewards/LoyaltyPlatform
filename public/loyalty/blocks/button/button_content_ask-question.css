@@ -1,0 +1,9 @@
+.button {
+  &_content_ask-question {
+    width: auto;
+    height: 35px;
+    padding: * 25px;
+    font-size: 15px;
+    line-height: 35px;
+  }
+}

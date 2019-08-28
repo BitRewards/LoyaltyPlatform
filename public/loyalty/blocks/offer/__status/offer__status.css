@@ -1,0 +1,37 @@
+.offer {
+  &__status {
+    position: relative;
+    height: 40px;
+    padding-top: 4px;
+    line-height: 36px;
+    background-color: #f6f8f9;
+    border-radius: 0 0 4px 4px;
+    box-sizing: border-box;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background-color: #eff3f5;
+    }
+
+    .offer:hover &,
+    &:hover,
+    &:active {
+      .offer__text {
+        &_viewtype_price {
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        &_viewtype_get {
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+    }
+  }
+}

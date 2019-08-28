@@ -1,0 +1,47 @@
+.sidemenu {
+  &__incut {
+    position: relative;
+    display: block;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 16px;
+    line-height: 1.15;
+    color: #fff;
+    background-color: var(--brandColor);
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 45px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 6px 6px 6px;
+      border-color: transparent transparent var(--brandColor) transparent;
+    }
+
+    &:after {
+      @media (--aboveMobile) {
+        content: "";
+        position: absolute;
+        top: center;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 11px 11px 11px 0;
+        border-color: transparent #fff transparent transparent;
+        opacity: 0;
+        transition: opacity linear .3s;
+      }
+    }
+
+    &.is-active {
+      &:after {
+        @media (--aboveMobile) {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

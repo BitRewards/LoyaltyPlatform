@@ -1,0 +1,17 @@
+.input-error {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  margin-top: 2px;
+  font-size: 12px;
+  text-align: left;
+  color: #f2ae9d;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: ellipsis;
+  @media (--mobile) {
+    position: static;
+    display: block;
+  }
+}

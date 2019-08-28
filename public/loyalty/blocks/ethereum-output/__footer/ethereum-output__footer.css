@@ -1,0 +1,6 @@
+.ethereum-output {
+  &__footer {
+    margin-top: 75px;
+    text-align: center;
+  }
+}

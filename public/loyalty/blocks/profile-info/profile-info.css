@@ -1,0 +1,9 @@
+.profile-info {
+  display: flex;
+  flex-wrap: wrap;
+  @mixin list-reset;
+
+  @media (--mobile) {
+    flex-direction: column;
+  }
+}

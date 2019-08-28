@@ -1,0 +1,5 @@
+.transaction {
+  &__status_viewtype_wait {
+    opacity: .4;
+  }
+}

@@ -1,0 +1,33 @@
+.loyalty-popup {
+  &__header {
+    position: relative;
+    margin-bottom: 25px;
+    padding: * 40px * 15px;
+    @media (--mobile) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 5;
+      height: 60px;
+      margin-bottom: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+    &:after {
+      content: "";
+      position: absolute 0;
+      box-shadow: 0 7px 13px rgba(120, 128, 138, .17);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity linear .3s;
+    }
+    &.has-shadow {
+      &:after {
+        @media (--mobile) {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

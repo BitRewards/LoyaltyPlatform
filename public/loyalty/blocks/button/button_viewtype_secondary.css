@@ -1,0 +1,12 @@
+.button {
+  &_viewtype_secondary {
+    background-color: #f3f3f4;
+    &:enabled:hover,
+    &:enabled:focus {
+      background-color: #dfe0e2;
+    }
+    &:active {
+      background-color: #dfe0e2;
+    }
+  }
+}

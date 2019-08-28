@@ -1,0 +1,11 @@
+/**
+ * Loyalty reports styles
+ */
+
+.js-report-preview .report-table-header {
+    margin: 20px 0;
+}
+
+.js-report-preview .report-table-header.first-header {
+    margin-top: 0;
+}

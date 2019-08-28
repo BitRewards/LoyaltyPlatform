@@ -1,0 +1,19 @@
+.button {
+  &_viewtype_primary {
+    color: #fff;
+    background-color: var(--brandColor);
+    &:enabled:hover,
+    &:enabled:focus {
+      background-color: #ffb954;
+    }
+    &:active {
+      background-color: #e59625;
+    }
+    &.is-load {
+      background: linear-gradient(-45deg, #e59625 25%, transparent 25%, transparent 50%, #e59625 50%, #e59625 75%, transparent 75%, transparent);
+      background-color: var(--brandColor);
+      background-size: 50px 50px;
+      animation: load 2s linear infinite;
+    }
+  }
+}

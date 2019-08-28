@@ -1,0 +1,43 @@
+.modal {
+  &_content_confirm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 740px;
+    width: 100%;
+    min-height: 384px;
+    overflow: hidden;
+    text-align: center;
+
+    @media (--mobile) {
+      padding: 20px;
+    }
+
+    .horizontal-slider__item {
+      vertical-align: middle;
+    }
+
+    .modal__body {
+      @media (--mobile) {
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+
+    .modal__back {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s;
+
+      &.is-show {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+  }
+}

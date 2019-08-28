@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+php -dxdebug.remote_autostart=1 -dxdebug.idekey=PHPSTORM "$@"

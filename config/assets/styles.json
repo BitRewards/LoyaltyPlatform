@@ -1,0 +1,8 @@
+{
+    "loyalty" : [
+        "loyalty/css/styles.css",
+        "loyalty/css/rouble.css",
+        "loyalty/css/hotfixes.css",
+        "loyalty/css/sweetalert.css"
+    ]
+}

@@ -1,0 +1,11 @@
+.tab-content {
+  &__in_content_spend {
+    .tab-content__body {
+      &:before {
+        @media (--mobile) {
+          content: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+version: '2'
+services:
+  db:
+    extends:
+      file: "postgres/local.yml"
+      service: db
+    networks:
+      - giftd-net
+  crm:
+    build: ./
+    volumes:
+      - ../:/crm/current
+      - ./hosts:/root/hosts
+      - /root/.composer/cache/
+      - ~/.ssh:/root/.ssh
+      
+    environment:
+      APP_ENV: local
+    networks:
+      - giftd-net
+
+networks:
+  giftd-net:
+    driver: bridge

@@ -1,0 +1,5 @@
+.button {
+  &_type_block {
+    width: 100%;
+  }
+}

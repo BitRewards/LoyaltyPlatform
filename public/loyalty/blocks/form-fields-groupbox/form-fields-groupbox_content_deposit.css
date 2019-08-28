@@ -1,0 +1,36 @@
+.form-fields-groupbox {
+  &_content_deposit {
+    display: flex;
+    @media (--mobile) {
+      display: block;
+    }
+    @media (--tabletPortrait) {
+      display: block;
+    }
+    .form-fields-groupbox__section {
+      flex-grow: 1;
+      &_content_submit {
+        flex-basis: 260px;
+        flex-grow: 0;
+      }
+      @media (--mobile) {
+        display: block;
+        margin-bottom: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      @media (--tabletPortrait) {
+        display: block;
+        margin-bottom: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

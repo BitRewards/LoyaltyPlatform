@@ -1,0 +1,61 @@
+.table {
+  &__cell {
+    padding: 20px 10px;
+    font-family: var(--defaultFontSemiBold);
+    font-size: 12px;
+
+    @media (--mobile) {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      border-bottom: 1px solid #eaeaec;
+      box-sizing: border-box;
+    }
+
+    @media (--tabletPortrait) {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      border-bottom: 1px solid #eaeaec;
+      box-sizing: border-box;
+    }
+
+    &:before {
+      @media (--mobile) {
+        content: attr(data-label);
+        float: left;
+        max-width: 30%;
+        width: 100%;
+        overflow: hidden;
+        text-transform: uppercase;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      @media (--tabletPortrait) {
+        content: attr(data-label);
+        float: left;
+        max-width: 30%;
+        width: 100%;
+        overflow: hidden;
+        text-transform: uppercase;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &:first-child {
+      @media (--mobile) {
+        border-top: 1px solid #eaeaec;
+      }
+
+      @media (--tabletPortrait) {
+        border-top: 1px solid #eaeaec;
+      }
+    }
+  }
+}

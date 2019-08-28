@@ -1,0 +1,14 @@
+.tab-content {
+  &__in_content_history {
+    @media (--mobile) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .tab-content__body {
+      @media (--mobile) {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}

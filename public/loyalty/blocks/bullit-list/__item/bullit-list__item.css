@@ -1,0 +1,11 @@
+.bullit-list {
+  &__item {
+    position: relative;
+    margin-top: 20px;
+    padding: 0 5px 0 20px;
+
+    @media (--aboveMobile) {
+      max-width: 226px;
+    }
+  }
+}

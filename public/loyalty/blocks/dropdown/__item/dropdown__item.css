@@ -1,0 +1,34 @@
+.dropdown {
+  &__item {
+    position: relative;
+    padding: 15px;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: #454e68;
+      opacity: 0;
+      transition: opacity .3s;
+    }
+
+    &:hover {
+      &:before {
+        opacity: .03;
+      }
+    }
+
+    &_viewtype_danger {
+      color: #de4a2c;
+
+      &:before {
+        background-color: #de4a2c;
+      }
+    }
+  }
+}

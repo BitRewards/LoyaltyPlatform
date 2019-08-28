@@ -1,0 +1,3 @@
+#!/bin/sh
+
+docker-compose -f ${ENV:-production}.yml up -d  --build

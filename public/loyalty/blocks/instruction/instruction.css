@@ -1,0 +1,4 @@
+.instruction {
+  @mixin list-reset;
+  counter-reset: instruction;
+}

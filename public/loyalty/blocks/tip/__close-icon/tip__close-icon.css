@@ -1,0 +1,10 @@
+.tip {
+  &__close-icon {
+    width: 10px;
+    height: 10px;
+    fill: #2e404b;
+    opacity: .8;
+    pointer-events: none;
+    transition: opacity .3s;
+  }
+}

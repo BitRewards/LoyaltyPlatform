@@ -1,0 +1,49 @@
+@define-mixin font-reset {
+  font: 0/0 "Arial", a;
+}
+
+@define-mixin undo-font-reset {
+  font: 14px/18px var(--defaultFont);
+}
+
+@define-mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@define-mixin justify-columns {
+  text-align:justify;
+  text-justify: newspaper;
+  font: 0/0 "Arial", a;
+  &:after {
+    content: "";
+    display: inline-block;
+    font:0/0 "Arial", a !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    vertical-align: top;
+    visibility: hidden;
+    width: 100% !important;
+  }
+}
+
+@define-mixin clearfix {
+  &:after {
+    content:"";
+    display: table;
+    clear: both;
+  }
+}
+
+@custom-media --retina (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi);
+@custom-media --mobile screen and (max-width: 767px);
+@custom-media --mobilePortrait screen and (max-width: 767px) and (orientation: portrait);
+@custom-media --mobileLandscape screen and (max-width: 767px) and (orientation: landscape);
+@custom-media --aboveMobile screen and (min-width: 768px);
+@custom-media --tablet screen and (min-width: 768px) and (max-width: 1100px);
+@custom-media --tabletPortrait screen and (min-width: 768px) and (max-width: 1100px) and (orientation: portrait);
+@custom-media --tabletLandscape screen and (min-width: 768px) and (max-width: 1100px) and (orientation: landscape);
+@custom-media --aboveTabletPortrait screen and (min-width: 768px) and (max-width: 1100px) and (orientation: landscape), (min-width: 1101px);
+@custom-media --desktop screen and (min-width: 1101px);

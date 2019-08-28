@@ -1,0 +1,9 @@
+.loader {
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+  }
+}

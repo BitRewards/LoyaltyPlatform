@@ -1,0 +1,14 @@
+.operation {
+  position: relative;
+  display: flex;
+  font-family: var(--defaultFont);
+  color: var(--defaultColor);
+
+  @media (--mobile) {
+    flex-wrap: wrap;
+  }
+
+  @media (--tablet) {
+    flex-wrap: wrap;
+  }
+}

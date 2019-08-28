@@ -1,0 +1,5 @@
+.switch {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}

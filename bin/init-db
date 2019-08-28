@@ -1,0 +1,51 @@
+#!/usr/bin/php
+<?php
+
+$env = getenv('ENV') ?: 'production';
+
+if (!in_array($env, ['testing', 'local'])) {
+    throw new \DomainException('This command can be run only for local or testing environment');
+}
+
+if (!file_exists(__DIR__ . '/docker-compose.yml')) {
+    $dockerComposeConfig = "";
+} else {
+    $dockerComposeConfig = "-f docker/_base.yml -f docker/$env.yml";
+}
+
+$dbContainer = trim(`docker-compose $dockerComposeConfig ps -q db`);
+
+if (!$dbContainer) {
+    echo "Error: Database container not found\n";
+    exit(1);
+}
+
+$dockerVolumePath =`docker inspect --format='{{ range .Mounts }}{{ if eq .Destination "/data" }}{{ .Source }}{{ end }}{{ end }}' $dbContainer`;
+
+if (!file_exists($dockerVolumePath)) {
+    `docker-compose $dockerComposeConfig stop db`;
+    `rm -rf $dockerVolumePath `;
+    `docker-compose $dockerComposeConfig start db`;
+    echo "Waiting for postgres to be live...\n";
+
+    do {
+        exec("docker exec $dbContainer pg_isready", $output, $returnCode);
+        echo "Waiting for postgres to be live...\n";
+        sleep(1);
+    } while($returnCode);
+    echo "Sleeping for 5 seconds...\n";
+    sleep(5);
+}
+
+echo "Restore database...\n";
+
+$baseDir = dirname(__DIR__);
+$initialDumpFile = "${baseDir}/resources/initial_dump.sql";
+`docker cp $initialDumpFile $dbContainer:/tmp`;
+`docker-compose $dockerComposeConfig exec db bash -c 'psql -U crm_user crm -f /tmp/crmdb_dev_dump.sql'`;
+
+echo "Apply migration...\n";
+
+`cd $baseDir && ./dartisan migrate`;
+
+echo "Initial database init!!!\n";

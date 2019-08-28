@@ -1,0 +1,5 @@
+.steps {
+  @mixin list-reset;
+  @mixin font-reset;
+  margin-left: -15px;
+}

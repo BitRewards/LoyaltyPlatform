@@ -1,0 +1,42 @@
+.upload-image {
+  &__label {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #cfcfcf;
+    /* cursor: pointer; */
+    cursor: default; /* change avatar off */
+    transition: background-color linear .3s, opacity linear .3s;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      size: 34px 27px;
+      background-image: url("camera.png#icons-common");
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      @media (--retina) {
+        background-image: url("camera@2x.png#icons-common");
+      }
+    }
+    /* change avatar off */
+    /* &:hover {
+      background-color: rgba(0, 0, 0, .78);
+      &:after {
+        background-image: url("upload.png#icons-common");
+        @media (--retina) {
+          background-image: url("upload@2x.png#icons-common");
+        }
+      }
+    } */
+    .is-image-loaded & {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}

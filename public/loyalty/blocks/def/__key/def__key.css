@@ -1,0 +1,8 @@
+.def {
+  &__key {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    opacity: .6;
+  }
+}

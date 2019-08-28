@@ -1,0 +1,8 @@
+.achievement {
+  &__hint {
+    font-family: var(--defaultFont);
+    font-size: 14px;
+    line-height: 19px;
+    opacity: .5;
+  }
+}

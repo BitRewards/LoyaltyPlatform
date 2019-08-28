@@ -1,0 +1,12 @@
+.field-remark {
+  &__button {
+    font-family: var(--defaultFontSemiBold);
+    border-bottom: 1px dotted;
+    cursor: pointer;
+    transition: border-bottom-color .3s;
+
+    &:hover {
+      border-bottom-color: transparent;
+    }
+  }
+}

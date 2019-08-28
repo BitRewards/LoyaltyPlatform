@@ -1,0 +1,6 @@
+.menu {
+  &__item-icon_content_earn-points {
+    size: 30px 29px;
+    stroke-width: 0;
+  }
+}

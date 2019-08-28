@@ -1,0 +1,12 @@
+.form {
+  &_content_ask-question {
+    padding-top: 30px;
+    text-align: center;
+    .form-fields-list__item_content_submit {
+      margin-bottom: 0;
+    }
+    .button_viewtype_modal {
+      width: 100%;
+    }
+  }
+}

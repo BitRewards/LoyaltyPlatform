@@ -1,0 +1,7 @@
+.form-success-send {
+  &_viewtype_small {
+    .form-success-send__title {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.tab-content {
+  &__action_viewtype_block {
+    @media (--aboveTabletPortrait) {
+      display: block;
+    }
+  }
+}

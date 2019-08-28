@@ -1,0 +1,5 @@
+.tab-content {
+  &__header-in {
+    position: relative;
+  }
+}

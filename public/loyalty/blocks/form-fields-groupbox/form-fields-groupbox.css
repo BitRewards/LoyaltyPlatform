@@ -1,0 +1,4 @@
+.form-fields-groupbox {
+  @mixin list-reset;
+  @mixin font-reset;
+}

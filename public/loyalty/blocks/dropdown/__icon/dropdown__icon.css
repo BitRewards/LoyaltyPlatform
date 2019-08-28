@@ -1,0 +1,12 @@
+.dropdown {
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 4px;
+    cursor: pointer;
+    opacity: .4;
+    transform: translate(-50%, -50%);
+  }
+}

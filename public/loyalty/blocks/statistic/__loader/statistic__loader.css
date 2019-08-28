@@ -1,0 +1,6 @@
+.statistic {
+  &__loader {
+    margin-top: 20px;
+    text-align: center;
+  }
+}

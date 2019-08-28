@@ -1,0 +1,11 @@
+.form-fields-groupbox {
+  &__section {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    @mixin undo-font-reset;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

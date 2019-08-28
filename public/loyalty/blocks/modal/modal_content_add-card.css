@@ -1,0 +1,7 @@
+.modal {
+  &_content_add-card {
+    .modal__body {
+      overflow: hidden;
+    }
+  }
+}

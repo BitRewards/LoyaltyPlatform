@@ -1,0 +1,12 @@
+.box {
+  &_content_hint {
+    margin-top: 20px;
+    padding: 15px 12px 30px;
+    background-color: #f6f7f9;
+    box-sizing: border-box;
+
+    &[v-cloak] {
+      display: none;
+    }
+  }
+}

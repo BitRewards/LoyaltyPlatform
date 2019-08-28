@@ -1,0 +1,16 @@
+#!/bin/bash
+# ON PRODUCTION ONLY!
+
+mkdir -p /crm/shared/node_modules/
+oldHashFile='/crm/shared/node_modules/package.json.md5'
+oldHash=''
+if [ -f $oldHashFile ]; then
+	oldHash=`cat $oldHashFile`
+fi
+
+currentHash=`md5sum ./package.json | cut -f1 -d' '`
+if [ "$currentHash" != "$oldHash" ]; then
+	echo "Running npm install...";
+	COMPOSE_INTERACTIVE_NO_CLI=1 COMPOSE_HTTP_TIMEOUT=500 docker-compose -f ./docker/gulp.yml run -T gulp npm i --prefix /crm/shared/ --no-audit
+	echo $currentHash > $oldHashFile
+fi

@@ -1,0 +1,8 @@
+.back-button {
+  &_viewtype_cabinet {
+    @media (--aboveMobile) {
+      top: 15px;
+      left: -25px;
+    }
+  }
+}

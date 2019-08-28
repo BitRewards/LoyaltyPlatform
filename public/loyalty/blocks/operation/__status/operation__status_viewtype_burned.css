@@ -1,0 +1,6 @@
+.operation {
+  &__status_viewtype_burned {
+    color: #2e404b!important;
+    background-color: rgba(186, 187, 189, .1)!important;
+  }
+}

@@ -1,0 +1,3 @@
+.content-columns {
+  @mixin font-reset;
+}

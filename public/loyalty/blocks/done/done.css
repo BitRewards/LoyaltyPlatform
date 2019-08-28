@@ -1,0 +1,18 @@
+.done {
+  position: absolute;
+  top: center;
+  right: 20px;
+  size: 20px;
+  fill: var(--brandColor);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity linear .3s;
+  pointer-events: none;
+  &.is-show {
+    opacity: .8;
+    pointer-events: auto;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

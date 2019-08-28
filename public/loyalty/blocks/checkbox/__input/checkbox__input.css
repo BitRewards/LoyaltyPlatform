@@ -1,0 +1,18 @@
+.checkbox {
+  &__input {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    opacity: 0;
+
+    &:checked {
+      ~.checkbox__pseudo {
+        border-color: var(--brandColor);
+
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.link {
+  &_viewtype_resend-code {
+    font-family: var(--defaultFontSemiBold);
+    font-size: 15px;
+    line-height: 1.26;
+    color: #00bde6;
+    border-bottom: 1px dotted currentColor;
+    transition: border-bottom-color linear .3s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom-color: transparent;
+    }
+  }
+}

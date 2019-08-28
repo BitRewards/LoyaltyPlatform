@@ -1,0 +1,10 @@
+.tab {
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    max-height: 0;
+    visibility: hidden;
+  }
+}

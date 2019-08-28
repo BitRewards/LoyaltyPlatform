@@ -1,0 +1,10 @@
+version: '2'
+services:
+  db:
+   extends:
+     file: ./_base.yml
+     service: db
+   ports:
+     - "5432:5432"
+   environment:
+     POSTGRES_PASSWORD: 12345

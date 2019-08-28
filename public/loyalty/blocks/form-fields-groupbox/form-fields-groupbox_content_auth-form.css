@@ -1,0 +1,25 @@
+.form-fields-groupbox {
+  &_content_auth-form {
+    .form-fields-groupbox__section {
+      width: 260px;
+      @media (--mobile) {
+        display: block;
+        margin-bottom: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      @media (--tabletPortrait) {
+        display: block;
+        margin-bottom: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

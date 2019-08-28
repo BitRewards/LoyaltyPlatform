@@ -1,0 +1,9 @@
+.form-success-send {
+  &__icon {
+    display: block;
+    margin: 0 auto 20px;
+    width: 70px;
+    height: 70px;
+    fill: var(--brandColor);
+  }
+}

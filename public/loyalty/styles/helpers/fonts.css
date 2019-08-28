@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+       url("/loyalty/fonts/OpenSans/OpenSansRegular/opensans-regular-webfont.woff2") format("woff2"),
+       url("/loyalty/fonts/OpenSans/OpenSansRegular/opensans-regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: local("Open Sans Light"),
+       url("/loyalty/fonts/OpenSans/OpenSansLight/opensans-light-webfont.woff2") format("woff2"),
+       url("/loyalty/fonts/OpenSans/OpenSansLight/opensans-light-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans Italic";
+  src: local("Open Sans Italic"),
+       url("/loyalty/fonts/OpenSans/OpenSansItalic/opensans-italic-webfont.woff") format("woff2"),
+       url("/loyalty/fonts/OpenSans/OpenSansItalic/opensans-italic-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans SemiBold";
+  src: local("Open Sans SemiBold"),
+       url("/loyalty/fonts/OpenSans/OpenSansSemiBold/opensans-semibold-webfont.woff2") format("woff2"),
+       url("/loyalty/fonts/OpenSans/OpenSansSemiBold/opensans-semibold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}

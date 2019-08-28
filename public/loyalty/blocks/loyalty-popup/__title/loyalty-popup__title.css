@@ -1,0 +1,11 @@
+.loyalty-popup {
+  &__title {
+    font-family: var(--defaultFontLight);
+    font-size: 30px;
+    line-height: 34px;
+    color: var(--defaultColor);
+    @media (--mobile) {
+      display: none;
+    }
+  }
+}

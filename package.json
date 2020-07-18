@@ -21,7 +21,7 @@
         "gulp-sourcemaps": "^2.6.4",
         "jquery": "^3.1.0",
         "laravel-elixir": "^6.0.0-18",
-        "lodash": "^4.17.11",
+        "lodash": "^4.17.19",
         "postcss-calc": "^7.0.1",
         "postcss-center": "^1.0.0",
         "postcss-cssnext": "^3.1.0",

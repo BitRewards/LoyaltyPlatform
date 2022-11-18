@@ -52,7 +52,7 @@
         "clipboard": "^2.0.4",
         "core-js": "3",
         "gulp-uglify": "*",
-        "imports-loader": "^0.6.5",
+        "imports-loader": "^4.0.1",
         "intl-tel-input": "^11.0.6",
         "moment": "^2.22.2",
         "postcss-mixins": "^6.2.1",
